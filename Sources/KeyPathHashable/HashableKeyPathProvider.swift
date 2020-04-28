@@ -1,5 +1,17 @@
+/**
+ A protocol that defines a single function that can be used to synthesise `Equatable` and `Hashable` conformance.
+ */
 public protocol HashableKeyPathProvider: EquatableKeyPathProvider, Hashable {
+    
+    /**
+     Add key paths to `consumer` that will be used for `Hashable` conformance.
+
+     If the `addHashableKeyPaths(to:)` function is omited the same keys will be used for `Equatable` conformance.
+
+     - parameter consumer: The consumer to pass the key paths to.
+     */
     static func addHashableKeyPaths<Consumer: HashableKeyPathConsumer>(to consumer: inout Consumer) where Consumer.Root == Self
+
 }
 
 extension HashableKeyPathProvider {
