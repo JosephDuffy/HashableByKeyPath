@@ -1,0 +1,58 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build_docs:
+    name: Build Docs
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+
+    - uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('.ruby-version') }}-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-${{ hashFiles('.ruby-version') }}-
+
+    - name: Bundle install
+      run: |
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+
+    - name: Build docs
+      run: bundle exec jazzy
+
+    - name: Upload Docs
+      uses: actions/upload-artifact@v1
+      with:
+        name: docs
+        path: docs
+
+  upload_docs:
+    needs: [build_docs]
+    name: Upload Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Download Docs
+      uses: actions/download-artifact@v1
+      with:
+        name: docs
+
+    - name: Deploy docs
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: docs
