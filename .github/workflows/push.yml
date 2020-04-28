@@ -22,5 +22,5 @@ jobs:
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:
-        file: ".build/debug/codecov"
+        file: ".build/debug/codecov/KeyPathHashable.json"
         fail_ci_if_error: true
