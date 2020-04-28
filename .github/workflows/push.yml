@@ -17,7 +17,7 @@ jobs:
       run: sudo xcode-select --switch /Applications/Xcode_${{ matrix.xcode }}.app
 
     - name: SwiftPM tests
-      run: swift test --skip-update
+      run: swift test --enable-code-coverage
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
