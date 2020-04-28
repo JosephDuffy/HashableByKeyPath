@@ -1,0 +1,96 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/EquatableKeyPathConsumer.swift",
+      "line": 1,
+      "symbol": "EquatableKeyPathConsumer",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/EquatableKeyPathConsumer.swift",
+      "line": 2,
+      "symbol": "EquatableKeyPathConsumer.Root",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/EquatableKeyPathConsumer.swift",
+      "line": 3,
+      "symbol": "EquatableKeyPathConsumer.includeEquatableKeyPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/EquatableKeyPathProvider.swift",
+      "line": 1,
+      "symbol": "EquatableKeyPathProvider",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/EquatableKeyPathProvider.swift",
+      "line": 2,
+      "symbol": "EquatableKeyPathProvider.addEquatableKeyPaths(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/EquatableKeyPathProvider.swift",
+      "line": 5,
+      "symbol": "EquatableKeyPathProvider",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/HashableKeyPathConsumer.swift",
+      "line": 1,
+      "symbol": "HashableKeyPathConsumer",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/HashableKeyPathConsumer.swift",
+      "line": 2,
+      "symbol": "HashableKeyPathConsumer.Root",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/HashableKeyPathConsumer.swift",
+      "line": 3,
+      "symbol": "HashableKeyPathConsumer.includeHashableKeyPath(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/HashableKeyPathProvider.swift",
+      "line": 1,
+      "symbol": "HashableKeyPathProvider",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/HashableKeyPathProvider.swift",
+      "line": 2,
+      "symbol": "HashableKeyPathProvider.addHashableKeyPaths(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/HashableKeyPathProvider.swift",
+      "line": 5,
+      "symbol": "HashableKeyPathProvider",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/josephduffy/Projects/KeyPathHashable/Sources/KeyPathHashable/HashableKeyPathProvider.swift",
+      "line": 7,
+      "symbol": "HashableKeyPathProvider.addEquatableKeyPaths(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/josephduffy/Projects/KeyPathHashable"
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HashableKeyPathProvider Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/HashableKeyPathProvider" class="dashAnchor"></a>
+    <a title="HashableKeyPathProvider Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (13% documented)</p>
+        <p class="header-right"><a href="https://github.com/JosephDuffy/KeyPathHashable"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HashableKeyPathProvider Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EquatableKeyPathConsumer.html">EquatableKeyPathConsumer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EquatableKeyPathProvider.html">EquatableKeyPathProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HashableKeyPathConsumer.html">HashableKeyPathConsumer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HashableKeyPathProvider.html">HashableKeyPathProvider</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HashableKeyPathProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HashableKeyPathProvider</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/EquatableKeyPathProvider.html">EquatableKeyPathProvider</a></span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15KeyPathHashable0caB8ProviderP03addcA5Paths2toyqd__z_t4RootQyd__RszAA0caB8ConsumerRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/addHashableKeyPaths(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15KeyPathHashable0caB8ProviderP03addcA5Paths2toyqd__z_t4RootQyd__RszAA0caB8ConsumerRd__lFZ">addHashableKeyPaths(to:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">addHashableKeyPaths</span><span class="o">&lt;</span><span class="kt">Consumer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">consumer</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Consumer</span><span class="p">)</span> <span class="k">where</span> <span class="k">Self</span> <span class="o">==</span> <span class="kt">Consumer</span><span class="o">.</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">Consumer</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/HashableKeyPathConsumer.html">HashableKeyPathConsumer</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15KeyPathHashable0caB8ProviderPAAE012addEquatableA5Paths2toyqd__z_t4RootQyd__RszAA0faB8ConsumerRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/addEquatableKeyPaths(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15KeyPathHashable0caB8ProviderPAAE012addEquatableA5Paths2toyqd__z_t4RootQyd__RszAA0faB8ConsumerRd__lFZ">addEquatableKeyPaths(to:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">addEquatableKeyPaths</span><span class="o">&lt;</span><span class="kt">Consumer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">consumer</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Consumer</span><span class="p">)</span> <span class="k">where</span> <span class="k">Self</span> <span class="o">==</span> <span class="kt">Consumer</span><span class="o">.</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">Consumer</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/EquatableKeyPathConsumer.html">EquatableKeyPathConsumer</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SH4hash4intoys6HasherVz_tF"></a>
+                    <a name="//apple_ref/swift/Method/hash(into:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SH4hash4intoys6HasherVz_tF">hash(into:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">hash</span><span class="p">(</span><span class="n">into</span> <span class="nv">hasher</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Hasher</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Joseph Duffy</a>. All rights reserved. (Last updated: 2020-04-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
