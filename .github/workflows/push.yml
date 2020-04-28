@@ -1,0 +1,25 @@
+name: Tests
+
+on: [push]
+
+jobs:
+  swiftpm_tests:
+    name: SwiftPM on Xcode ${{ matrix.xcode }}
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        xcode: ["11.4"]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Select Xcode ${{ matrix.xcode }}
+      run: sudo xcode-select --switch /Applications/Xcode_${{ matrix.xcode }}.app
+
+    - name: SwiftPM tests
+      run: swift test --skip-update
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v1
+      with:
+        fail_ci_if_error: true
