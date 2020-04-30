@@ -3,7 +3,7 @@ import XCTest
 
 final class HashableKeyPathProviderTests: XCTestCase {
 
-    func testEquatableKeyPathProviderTests() {
+    func testHashableByKeyPath() {
         struct Foo: HashableByKeyPath {
             static func addHashableKeyPaths<Consumer>(to consumer: inout Consumer) where Self == Consumer.Root, Consumer: HashableKeyPathConsumer {
                 consumer.includeHashableKeyPath(\.bar)
