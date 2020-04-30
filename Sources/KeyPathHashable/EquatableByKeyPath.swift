@@ -1,7 +1,7 @@
 /**
  A protocol that defines a single function that can be used to synthesise `Equatable` conformance.
  */
-public protocol EquatableKeyPathProvider: Equatable {
+public protocol EquatableByKeyPath: Equatable {
 
     /**
      Add key paths to `consumer` that will be used for `Equatable` conformance.
@@ -12,7 +12,7 @@ public protocol EquatableKeyPathProvider: Equatable {
 
 }
 
-extension EquatableKeyPathProvider {
+extension EquatableByKeyPath {
 
     public static func == (lhs: Self, rhs: Self) -> Bool {
         var aggregator = EquatabilityKeyPathAggregator<Self>()

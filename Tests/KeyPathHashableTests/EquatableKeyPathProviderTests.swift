@@ -4,7 +4,7 @@ import XCTest
 final class EquatableKeyPathProviderTests: XCTestCase {
 
     func testEquatableKeyPathProviderTests() {
-        struct Foo: EquatableKeyPathProvider {
+        struct Foo: EquatableByKeyPath {
             static func addEquatableKeyPaths<Consumer>(to consumer: inout Consumer) where Self == Consumer.Root, Consumer: EquatableKeyPathConsumer {
                 consumer.includeEquatableKeyPath(\.bar)
                 consumer.includeEquatableKeyPath(\.bar2)
