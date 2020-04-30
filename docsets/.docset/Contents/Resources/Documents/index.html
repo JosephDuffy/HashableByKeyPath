@@ -60,9 +60,9 @@
 <p><code><a href="Protocols/HashableByKeyPath.html">HashableByKeyPath</a></code> is a Swift package that aids with adding <code>Equatable</code> and <code>Hashable</code> conformance by using <code>KeyPath</code>s. It helps avoid mistakes such as compairing <code>lhs.foo</code> to <code>lhs.foo</code>, comparing different properties of <code>lhs</code> and <code>rhs</code>, or having <code>==</code> and <code>hash(into:)</code> implementations that check different properties.</p>
 <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Foo</span><span class="p">:</span> <span class="kt">HashableByKeyPath</span> <span class="p">{</span>
     <span class="kd">static</span> <span class="kd">func</span> <span class="n">addHashableKeyPaths</span><span class="o">&lt;</span><span class="kt">Consumer</span><span class="p">:</span> <span class="kt">HashableKeyPathConsumer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">consumer</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Consumer</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Consumer</span><span class="o">.</span><span class="kt">Root</span> <span class="o">==</span> <span class="k">Self</span> <span class="p">{</span>
-        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar1</span><span class="p">)</span>
-        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar2</span><span class="p">)</span>
-        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar3</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">addHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar1</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">addHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar2</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">addHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar3</span><span class="p">)</span>
     <span class="p">}</span>
 
     <span class="k">var</span> <span class="nv">bar1</span><span class="p">:</span> <span class="kt">String</span>
@@ -87,9 +87,9 @@
 <p>If the type only needs to conform to <code>Equatable</code> the type can conform to <code><a href="Protocols/EquatableByKeyPath.html">EquatableByKeyPath</a></code>:</p>
 <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Foo</span><span class="p">:</span> <span class="n">addEquatableKeyPaths</span> <span class="p">{</span>
     <span class="kd">static</span> <span class="kd">func</span> <span class="n">addHashableKeyPaths</span><span class="o">&lt;</span><span class="kt">Consumer</span><span class="p">:</span> <span class="kt">HashableKeyPathConsumer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">consumer</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Consumer</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Consumer</span><span class="o">.</span><span class="kt">Root</span> <span class="o">==</span> <span class="k">Self</span> <span class="p">{</span>
-        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar1</span><span class="p">)</span>
-        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar2</span><span class="p">)</span>
-        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar3</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">addEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar1</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">addEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar2</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">addEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar3</span><span class="p">)</span>
     <span class="p">}</span>
 
     <span class="k">var</span> <span class="nv">bar1</span><span class="p">:</span> <span class="kt">String</span>
