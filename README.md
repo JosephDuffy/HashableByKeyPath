@@ -10,9 +10,9 @@
 ```swift
 struct Foo: HashableByKeyPath {
     static func addHashableKeyPaths<Consumer: HashableKeyPathConsumer>(to consumer: inout Consumer) where Consumer.Root == Self {
-        consumer.includeHashableKeyPath(\.bar1)
-        consumer.includeHashableKeyPath(\.bar2)
-        consumer.includeHashableKeyPath(\.bar3)
+        consumer.addHashableKeyPath(\.bar1)
+        consumer.addHashableKeyPath(\.bar2)
+        consumer.addHashableKeyPath(\.bar3)
     }
 
     var bar1: String
@@ -39,9 +39,9 @@ If the type only needs to conform to `Equatable` the type can conform to `Equata
 ```swift
 struct Foo: addEquatableKeyPaths {
     static func addHashableKeyPaths<Consumer: HashableKeyPathConsumer>(to consumer: inout Consumer) where Consumer.Root == Self {
-        consumer.includeEquatableKeyPath(\.bar1)
-        consumer.includeEquatableKeyPath(\.bar2)
-        consumer.includeEquatableKeyPath(\.bar3)
+        consumer.addEquatableKeyPath(\.bar1)
+        consumer.addEquatableKeyPath(\.bar2)
+        consumer.addEquatableKeyPath(\.bar3)
     }
 
     var bar1: String
