@@ -57,7 +57,7 @@
 
                 </div>
               </div>
-            <p>A protocol that defines a function that will consume key paths to <code>Equatable</code> properties.</p>
+            <p>A protocol that defines a function that can be used to add key paths from the <code>Root</code> type to <code>Equatable</code> properties.</p>
 
           </section>
           <section class="section task-group-section">
@@ -93,9 +93,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17HashableByKeyPath09EquatablecD8ConsumerP07includeecD0yys0cD0Cy4RootQzqd__GSQRd__lF"></a>
-                    <a name="//apple_ref/swift/Method/includeEquatableKeyPath(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17HashableByKeyPath09EquatablecD8ConsumerP07includeecD0yys0cD0Cy4RootQzqd__GSQRd__lF">includeEquatableKeyPath(_:<wbr>)</a>
+                    <a name="/s:17HashableByKeyPath09EquatablecD8ConsumerP03addecD0yys0cD0Cy4RootQzqd__GSQRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/addEquatableKeyPath(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath09EquatablecD8ConsumerP03addecD0yys0cD0Cy4RootQzqd__GSQRd__lF">addEquatableKeyPath(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -110,7 +110,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="n">includeEquatableKeyPath</span><span class="o">&lt;</span><span class="kt">KeyType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/EquatableKeyPathConsumer.html#/s:17HashableByKeyPath09EquatablecD8ConsumerP4RootQa">Root</a></span><span class="p">,</span> <span class="kt">KeyType</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">where</span> <span class="kt">KeyType</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="n">addEquatableKeyPath</span><span class="o">&lt;</span><span class="kt">KeyType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/EquatableKeyPathConsumer.html#/s:17HashableByKeyPath09EquatablecD8ConsumerP4RootQa">Root</a></span><span class="p">,</span> <span class="kt">KeyType</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">where</span> <span class="kt">KeyType</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -126,7 +126,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The key to include.</p>
+                                  <p>The key to include when equating 2 instances of <code><a href="../Protocols/EquatableKeyPathConsumer.html#/s:17HashableByKeyPath09EquatablecD8ConsumerP4RootQa">Root</a></code>.</p>
                                 </div>
                               </td>
                             </tr>
