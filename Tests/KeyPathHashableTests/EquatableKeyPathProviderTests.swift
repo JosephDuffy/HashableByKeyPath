@@ -13,7 +13,13 @@ final class EquatableKeyPathProviderTests: XCTestCase {
 
             let bar: String
             let bar2: String
-            let bar3: String
+            private let bar3: String
+
+            init(bar: String, bar2: String, bar3: String) {
+                self.bar = bar
+                self.bar2 = bar2
+                self.bar3 = bar3
+            }
         }
 
         let foo1 = Foo(bar: "bar", bar2: "bar2", bar3: "bar3")
