@@ -19,6 +19,9 @@ jobs:
     - name: SwiftPM tests
       run: swift test --enable-code-coverage
 
+    - name: Convert coverage to lcov
+      run: xcrun llvm-cov export -format="lcov" .build/debug/KeyPathHashablePackageTests.xctest/Contents/MacOS/KeyPathHashablePackageTests -instr-profile .build/debug/codecov/default.profdata > coverage.lcov
+
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
       with:
