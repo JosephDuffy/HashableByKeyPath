@@ -6,9 +6,9 @@ public protocol HashableByKeyPath: EquatableByKeyPath, Hashable {
     /**
      Add key paths to `consumer` that will be used for `Hashable` conformance.
 
-     If the `addHashableKeyPaths(to:)` function is omited the same keys will be used for `Equatable` conformance.
+     If the `addEquatableKeyPaths(to:)` function is omited the same keys will be used for `Equatable` conformance.
 
-     - parameter consumer: The consumer to pass the key paths to.
+     - parameter consumer: The consumer to add the key paths to.
      */
     static func addHashableKeyPaths<Consumer: HashableKeyPathConsumer>(to consumer: inout Consumer) where Consumer.Root == Self
 
