@@ -6,9 +6,9 @@ final class HashableKeyPathProviderTests: XCTestCase {
     func testHashableByKeyPath() {
         struct Foo: HashableByKeyPath {
             static func addHashableKeyPaths<Consumer>(to consumer: inout Consumer) where Self == Consumer.Root, Consumer: HashableKeyPathConsumer {
-                consumer.includeHashableKeyPath(\.bar)
-                consumer.includeHashableKeyPath(\.bar2)
-                consumer.includeHashableKeyPath(\.bar3)
+                consumer.addHashableKeyPath(\.bar)
+                consumer.addHashableKeyPath(\.bar2)
+                consumer.addHashableKeyPath(\.bar3)
             }
 
             let bar: String

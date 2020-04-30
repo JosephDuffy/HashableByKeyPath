@@ -8,8 +8,8 @@ internal struct HashableKeyPathForwarder<Root, Consumer: EquatableKeyPathConsume
         self.equatableKeyPathConsumer = equatableKeyPathConsumer
     }
 
-    internal mutating func includeHashableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Hashable {
-        equatableKeyPathConsumer.includeEquatableKeyPath(keyPath)
+    internal mutating func addHashableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Hashable {
+        equatableKeyPathConsumer.addEquatableKeyPath(keyPath)
     }
 
 }

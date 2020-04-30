@@ -6,7 +6,7 @@ internal struct EquatabilityKeyPathAggregator<Root>: EquatableKeyPathConsumer {
 
     private var closures: [EquateClosure] = []
 
-    internal mutating func includeEquatableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Equatable {
+    internal mutating func addEquatableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Equatable {
         closures.append({ lhs, rhs in
             return lhs[keyPath: keyPath] == rhs[keyPath: keyPath]
         })

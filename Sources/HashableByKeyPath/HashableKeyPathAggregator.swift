@@ -4,7 +4,7 @@ internal struct HashableKeyPathAggregator<Root>: HashableKeyPathConsumer {
 
     internal init() {}
 
-    internal mutating func includeHashableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Hashable {
+    internal mutating func addHashableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Hashable {
         closures.append({ root, hasher in
             return root[keyPath: keyPath].hash(into: &hasher)
         })

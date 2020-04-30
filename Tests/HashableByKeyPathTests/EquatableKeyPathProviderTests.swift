@@ -6,9 +6,9 @@ final class EquatableKeyPathProviderTests: XCTestCase {
     func testEquatableByKeyPath() {
         struct Foo: EquatableByKeyPath {
             static func addEquatableKeyPaths<Consumer>(to consumer: inout Consumer) where Self == Consumer.Root, Consumer: EquatableKeyPathConsumer {
-                consumer.includeEquatableKeyPath(\.bar)
-                consumer.includeEquatableKeyPath(\.bar2)
-                consumer.includeEquatableKeyPath(\.bar3)
+                consumer.addEquatableKeyPath(\.bar)
+                consumer.addEquatableKeyPath(\.bar2)
+                consumer.addEquatableKeyPath(\.bar3)
             }
 
             let bar: String

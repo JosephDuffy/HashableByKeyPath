@@ -11,6 +11,6 @@ public protocol HashableKeyPathConsumer {
 
     - parameter keyPath: The key to include.
     */
-    mutating func includeHashableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Hashable
+    mutating func addHashableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Hashable
 
 }

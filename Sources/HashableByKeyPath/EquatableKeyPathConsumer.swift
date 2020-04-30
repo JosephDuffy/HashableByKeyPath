@@ -12,6 +12,6 @@ public protocol EquatableKeyPathConsumer {
 
      - parameter keyPath: The key to include.
      */
-    mutating func includeEquatableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Equatable
+    mutating func addEquatableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Equatable
 
 }
