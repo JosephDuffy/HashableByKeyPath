@@ -4,7 +4,7 @@ import XCTest
 final class HashableKeyPathProviderTests: XCTestCase {
 
     func testEquatableKeyPathProviderTests() {
-        struct Foo: HashableKeyPathProvider {
+        struct Foo: HashableByKeyPath {
             static func addHashableKeyPaths<Consumer>(to consumer: inout Consumer) where Self == Consumer.Root, Consumer: HashableKeyPathConsumer {
                 consumer.includeHashableKeyPath(\.bar)
                 consumer.includeHashableKeyPath(\.bar2)
