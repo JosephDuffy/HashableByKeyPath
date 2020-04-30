@@ -13,8 +13,8 @@
     <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (13% documented)</p>
-        <p class="header-right"><a href="https://github.com/JosephDuffy/KeyPathHashable"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/JosephDuffy/HashableByKeyPath"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -31,16 +31,16 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/EquatableByKeyPath.html">EquatableByKeyPath</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/EquatableKeyPathConsumer.html">EquatableKeyPathConsumer</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/EquatableKeyPathProvider.html">EquatableKeyPathProvider</a>
+                <a href="Protocols/HashableByKeyPath.html">HashableByKeyPath</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/HashableKeyPathConsumer.html">HashableKeyPathConsumer</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/HashableKeyPathProvider.html">HashableKeyPathProvider</a>
               </li>
             </ul>
           </li>
@@ -50,17 +50,92 @@
         <section>
           <section class="section">
             
-            <h1 id='keypathhashable' class='heading'>KeyPathHashable</h1>
+            <h1 id='hashablebykeypath' class='heading'>HashableByKeyPath</h1>
 
-<p><a href="https://github.com/JosephDuffy/KeyPathHashable/actions?query=workflow%3ATests"><img src="https://github.com/JosephDuffy/KeyPathHashable/workflows/Tests/badge.svg" alt="Tests"></a>
-<a href="https://codecov.io/gh/JosephDuffy/KeyPathHashable"><img src="https://codecov.io/gh/JosephDuffy/KeyPathHashable/branch/master/graph/badge.svg" alt="Code Coverage"></a></p>
+<p><a href="https://github.com/JosephDuffy/HashableByKeyPath/actions?query=workflow%3ATests"><img src="https://github.com/JosephDuffy/HashableByKeyPath/workflows/Tests/badge.svg" alt="Tests"></a>
+<a href="https://codecov.io/gh/JosephDuffy/HashableByKeyPath"><img src="https://codecov.io/gh/JosephDuffy/HashableByKeyPath/branch/master/graph/badge.svg" alt="Code Coverage"></a>
+<a href="https://josephduffy.github.io/HashableByKeyPath/"><img src="https://josephduffy.github.io/HashableByKeyPath/badge.svg" alt="Documentation"></a>
+<a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat" alt="SwiftPM Compatible"></a></p>
 
-<p><code>KeyPathHashable</code> is a Swift package that aids with adding <code>Equatable</code> and <code>Hashable</code> conformance by using <code>KeyPath</code>s.</p>
+<p><code><a href="Protocols/HashableByKeyPath.html">HashableByKeyPath</a></code> is a Swift package that aids with adding <code>Equatable</code> and <code>Hashable</code> conformance by using <code>KeyPath</code>s. It helps avoid mistakes such as compairing <code>lhs.foo</code> to <code>lhs.foo</code>, comparing different properties of <code>lhs</code> and <code>rhs</code>, or having <code>==</code> and <code>hash(into:)</code> implementations that check different properties.</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Foo</span><span class="p">:</span> <span class="kt">HashableByKeyPath</span> <span class="p">{</span>
+    <span class="kd">static</span> <span class="kd">func</span> <span class="n">addHashableKeyPaths</span><span class="o">&lt;</span><span class="kt">Consumer</span><span class="p">:</span> <span class="kt">HashableKeyPathConsumer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">consumer</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Consumer</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Consumer</span><span class="o">.</span><span class="kt">Root</span> <span class="o">==</span> <span class="k">Self</span> <span class="p">{</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar1</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar2</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeHashableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar3</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">var</span> <span class="nv">bar1</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="k">var</span> <span class="nv">bar2</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="k">var</span> <span class="nv">bar3</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">foo1</span> <span class="o">=</span> <span class="kt">Foo</span><span class="p">(</span><span class="nv">bar</span><span class="p">:</span> <span class="s">"value"</span><span class="p">,</span> <span class="nv">bar2</span><span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="nv">bar3</span><span class="p">:</span> <span class="s">"value3"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">foo2</span> <span class="o">=</span> <span class="kt">Foo</span><span class="p">(</span><span class="nv">bar</span><span class="p">:</span> <span class="s">"value"</span><span class="p">,</span> <span class="nv">bar2</span><span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="nv">bar3</span><span class="p">:</span> <span class="s">"value3"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">foo3</span> <span class="o">=</span> <span class="kt">Foo</span><span class="p">(</span><span class="nv">bar</span><span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="nv">bar2</span><span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="nv">bar3</span><span class="p">:</span> <span class="s">"value3"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">foos</span><span class="p">:</span> <span class="kt">Set</span> <span class="o">=</span> <span class="p">[</span><span class="n">foo1</span><span class="p">,</span> <span class="n">foo2</span><span class="p">]</span>
+
+<span class="n">foo1</span> <span class="o">==</span> <span class="n">foo1</span> <span class="c1">// true</span>
+<span class="n">foo1</span> <span class="o">==</span> <span class="n">foo2</span> <span class="c1">// true</span>
+<span class="n">foo1</span> <span class="o">==</span> <span class="n">foo3</span> <span class="c1">// false</span>
+<span class="n">foo2</span> <span class="o">==</span> <span class="n">foo3</span> <span class="c1">// false</span>
+<span class="n">foos</span><span class="o">.</span><span class="n">count</span> <span class="c1">// 1</span>
+<span class="n">foos</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">foo2</span><span class="p">)</span> <span class="c1">// true</span>
+<span class="n">foos</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">foo3</span><span class="p">)</span> <span class="c1">// false</span>
+</code></pre>
+
+<p>If the type only needs to conform to <code>Equatable</code> the type can conform to <code><a href="Protocols/EquatableByKeyPath.html">EquatableByKeyPath</a></code>:</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Foo</span><span class="p">:</span> <span class="n">addEquatableKeyPaths</span> <span class="p">{</span>
+    <span class="kd">static</span> <span class="kd">func</span> <span class="n">addHashableKeyPaths</span><span class="o">&lt;</span><span class="kt">Consumer</span><span class="p">:</span> <span class="kt">HashableKeyPathConsumer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">consumer</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Consumer</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Consumer</span><span class="o">.</span><span class="kt">Root</span> <span class="o">==</span> <span class="k">Self</span> <span class="p">{</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar1</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar2</span><span class="p">)</span>
+        <span class="n">consumer</span><span class="o">.</span><span class="nf">includeEquatableKeyPath</span><span class="p">(\</span><span class="o">.</span><span class="n">bar3</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">var</span> <span class="nv">bar1</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="k">var</span> <span class="nv">bar2</span><span class="p">:</span> <span class="kt">String</span>
+    <span class="k">var</span> <span class="nv">bar3</span><span class="p">:</span> <span class="kt">Int</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">foo1</span> <span class="o">=</span> <span class="kt">Foo</span><span class="p">(</span><span class="nv">bar</span><span class="p">:</span> <span class="s">"value"</span><span class="p">,</span> <span class="nv">bar2</span><span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="nv">bar3</span><span class="p">:</span> <span class="s">"value3"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">foo2</span> <span class="o">=</span> <span class="kt">Foo</span><span class="p">(</span><span class="nv">bar</span><span class="p">:</span> <span class="s">"value"</span><span class="p">,</span> <span class="nv">bar2</span><span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="nv">bar3</span><span class="p">:</span> <span class="s">"value3"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">foo3</span> <span class="o">=</span> <span class="kt">Foo</span><span class="p">(</span><span class="nv">bar</span><span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="nv">bar2</span><span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="nv">bar3</span><span class="p">:</span> <span class="s">"value3"</span><span class="p">)</span>
+
+<span class="n">foo1</span> <span class="o">==</span> <span class="n">foo1</span> <span class="c1">// true</span>
+<span class="n">foo1</span> <span class="o">==</span> <span class="n">foo2</span> <span class="c1">// true</span>
+<span class="n">foo1</span> <span class="o">==</span> <span class="n">foo3</span> <span class="c1">// false</span>
+<span class="n">foo2</span> <span class="o">==</span> <span class="n">foo3</span> <span class="c1">// false</span>
+</code></pre>
+<h1 id='installation' class='heading'>Installation</h1>
+
+<p><code><a href="Protocols/HashableByKeyPath.html">HashableByKeyPath</a></code> supports installation via <a href="https://github.com/apple/swift-package-manager">SwiftPM</a>. This can be done by adding the package to the dependencies section and as the dependency of a target:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
+    <span class="o">...</span>
+    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/JosephDuffy/HashableByKeyPath.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"1.0.0"</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">.</span><span class="nf">target</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"MyApp"</span><span class="p">,</span> <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span><span class="s">"HashableByKeyPath"</span><span class="p">]),</span>
+    <span class="p">],</span>
+    <span class="o">...</span>
+<span class="p">)</span>
+</code></pre>
+<h1 id='documentation' class='heading'>Documentation</h1>
+
+<p><code><a href="Protocols/HashableByKeyPath.html">HashableByKeyPath</a></code> is fully documented, with <a href="https://josephduffy.github.io/HashableByKeyPath/">code-level documentation available online</a>. The online documentation is generated from the source code with every release, so it is up-to-date with the latest release, but may be different to the code in <code>master</code>.</p>
+<h1 id='tests-and-ci' class='heading'>Tests and CI</h1>
+
+<p><code><a href="Protocols/HashableByKeyPath.html">HashableByKeyPath</a></code> has a full test suite, which is run on <a href="https://github.com/JosephDuffy/HashableByKeyPath/actions?query=workflow%3ATests">GitHub actions</a> as part of pull requests. All tests must pass for a pull request to be merged.</p>
+
+<p>Code coverage is collected and reported to to <a href="https://codecov.io/gh/JosephDuffy/HashableByKeyPath">Codecov</a>.</p>
+<h1 id='license' class='heading'>License</h1>
+
+<p>The project is released under the MIT license. View the <a href="./LICENSE">LICENSE</a> file for the full license.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Joseph Duffy</a>. All rights reserved. (Last updated: 2020-04-28)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Joseph Duffy</a>. All rights reserved. (Last updated: 2020-04-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

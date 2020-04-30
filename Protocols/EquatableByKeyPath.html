@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HashableKeyPathConsumer Protocol Reference</title>
+    <title>EquatableByKeyPath Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Protocol/HashableKeyPathConsumer" class="dashAnchor"></a>
-    <a title="HashableKeyPathConsumer Protocol Reference"></a>
+    <a name="//apple_ref/swift/Protocol/EquatableByKeyPath" class="dashAnchor"></a>
+    <a title="EquatableByKeyPath Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        HashableKeyPathConsumer Protocol Reference
+        EquatableByKeyPath Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -50,14 +50,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>HashableKeyPathConsumer</h1>
+            <h1>EquatableByKeyPath</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HashableKeyPathConsumer</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EquatableByKeyPath</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
                 </div>
               </div>
-            <p>A protocol that defines a function that will consume key paths to <code>Hashable</code> properties.</p>
+            <p>A protocol that defines a single function that can be used to synthesise <code>Equatable</code> conformance.</p>
 
           </section>
           <section class="section task-group-section">
@@ -66,9 +66,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:17HashableByKeyPath0acD8ConsumerP4RootQa"></a>
-                    <a name="//apple_ref/swift/Alias/Root" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17HashableByKeyPath0acD8ConsumerP4RootQa">Root</a>
+                    <a name="/s:17HashableByKeyPath09EquatablebcD0P03addeC5Paths2toyqd__z_t4RootQyd__RszAA0ecD8ConsumerRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/addEquatableKeyPaths(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath09EquatablebcD0P03addeC5Paths2toyqd__z_t4RootQyd__RszAA0ecD8ConsumerRd__lFZ">addEquatableKeyPaths(to:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -76,41 +76,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The root type of the object that will be hash</p>
+                        <p>Add key paths to <code>consumer</code> that will be used for <code>Equatable</code> conformance.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">Root</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:17HashableByKeyPath0acD8ConsumerP07includeacD0yys0cD0Cy4RootQzqd__GSHRd__lF"></a>
-                    <a name="//apple_ref/swift/Method/includeHashableKeyPath(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:17HashableByKeyPath0acD8ConsumerP07includeacD0yys0cD0Cy4RootQzqd__GSHRd__lF">includeHashableKeyPath(_:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Add the provided key path to the collection of key paths that will be used to equate calculate the hash of an instance of <code><a href="../Protocols/HashableKeyPathConsumer.html#/s:17HashableByKeyPath0acD8ConsumerP4RootQa">Root</a></code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">mutating</span> <span class="kd">func</span> <span class="n">includeHashableKeyPath</span><span class="o">&lt;</span><span class="kt">KeyType</span><span class="o">&gt;</span><span class="p">(</span><span class="n">_</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/HashableKeyPathConsumer.html#/s:17HashableByKeyPath0acD8ConsumerP4RootQa">Root</a></span><span class="p">,</span> <span class="kt">KeyType</span><span class="o">&gt;</span><span class="p">)</span> <span class="k">where</span> <span class="kt">KeyType</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">addEquatableKeyPaths</span><span class="o">&lt;</span><span class="kt">Consumer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">consumer</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Consumer</span><span class="p">)</span> <span class="k">where</span> <span class="k">Self</span> <span class="o">==</span> <span class="kt">Consumer</span><span class="o">.</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">Consumer</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/EquatableKeyPathConsumer.html">EquatableKeyPathConsumer</a></span></code></pre>
 
                         </div>
                       </div>
@@ -121,17 +94,46 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>keyPath</em>
+                                <em>consumer</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The key to include.</p>
+                                  <p>The consumer to pass the key paths to.</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:<wbr>_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

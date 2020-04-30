@@ -14,8 +14,8 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (13% documented)</p>
-        <p class="header-right"><a href="https://github.com/JosephDuffy/KeyPathHashable"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/JosephDuffy/HashableByKeyPath"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -32,16 +32,16 @@
             <a href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Protocols/EquatableByKeyPath.html">EquatableByKeyPath</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Protocols/EquatableKeyPathConsumer.html">EquatableKeyPathConsumer</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/EquatableKeyPathProvider.html">EquatableKeyPathProvider</a>
+                <a href="Protocols/HashableByKeyPath.html">HashableByKeyPath</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/HashableKeyPathConsumer.html">HashableKeyPathConsumer</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/HashableKeyPathProvider.html">HashableKeyPathProvider</a>
               </li>
             </ul>
           </li>
@@ -60,9 +60,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15KeyPathHashable09EquatableaB8ConsumerP"></a>
-                    <a name="//apple_ref/swift/Protocol/EquatableKeyPathConsumer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15KeyPathHashable09EquatableaB8ConsumerP">EquatableKeyPathConsumer</a>
+                    <a name="/s:17HashableByKeyPath09EquatablebcD0P"></a>
+                    <a name="//apple_ref/swift/Protocol/EquatableByKeyPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath09EquatablebcD0P">EquatableByKeyPath</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -70,7 +70,36 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>A protocol that defines a single function that can be used to synthesise <code>Equatable</code> conformance.</p>
+
+                        <a href="Protocols/EquatableByKeyPath.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EquatableByKeyPath</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath09EquatablecD8ConsumerP"></a>
+                    <a name="//apple_ref/swift/Protocol/EquatableKeyPathConsumer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath09EquatablecD8ConsumerP">EquatableKeyPathConsumer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A protocol that defines a function that will consume key paths to <code>Equatable</code> properties.</p>
+
                         <a href="Protocols/EquatableKeyPathConsumer.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -87,9 +116,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15KeyPathHashable09EquatableaB8ProviderP"></a>
-                    <a name="//apple_ref/swift/Protocol/EquatableKeyPathProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15KeyPathHashable09EquatableaB8ProviderP">EquatableKeyPathProvider</a>
+                    <a name="/s:17HashableByKeyPathAAP"></a>
+                    <a name="//apple_ref/swift/Protocol/HashableByKeyPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPathAAP">HashableByKeyPath</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -97,14 +126,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                        <a href="Protocols/EquatableKeyPathProvider.html" class="slightly-smaller">See more</a>
+                        <p>A protocol that defines a single function that can be used to synthesise <code>Equatable</code> and <code>Hashable</code> conformance.</p>
+
+                        <a href="Protocols/HashableByKeyPath.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">EquatableKeyPathProvider</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HashableByKeyPath</span> <span class="p">:</span> <span class="kt"><a href="Protocols/EquatableByKeyPath.html">EquatableByKeyPath</a></span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -114,9 +144,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15KeyPathHashable0caB8ConsumerP"></a>
+                    <a name="/s:17HashableByKeyPath0acD8ConsumerP"></a>
                     <a name="//apple_ref/swift/Protocol/HashableKeyPathConsumer" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15KeyPathHashable0caB8ConsumerP">HashableKeyPathConsumer</a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD8ConsumerP">HashableKeyPathConsumer</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -124,7 +154,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>A protocol that defines a function that will consume key paths to <code>Hashable</code> properties.</p>
+
                         <a href="Protocols/HashableKeyPathConsumer.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -138,39 +169,12 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15KeyPathHashable0caB8ProviderP"></a>
-                    <a name="//apple_ref/swift/Protocol/HashableKeyPathProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15KeyPathHashable0caB8ProviderP">HashableKeyPathProvider</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                        <a href="Protocols/HashableKeyPathProvider.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HashableKeyPathProvider</span> <span class="p">:</span> <span class="kt"><a href="Protocols/EquatableKeyPathProvider.html">EquatableKeyPathProvider</a></span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Joseph Duffy</a>. All rights reserved. (Last updated: 2020-04-28)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Joseph Duffy</a>. All rights reserved. (Last updated: 2020-04-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
