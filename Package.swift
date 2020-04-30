@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "KeyPathHashable",
+    name: "HashableByKeyPath",
     products: [
-        .library(name: "KeyPathHashable", targets: ["KeyPathHashable"]),
+        .library(name: "HashableByKeyPath", targets: ["HashableByKeyPath"]),
     ],
     targets: [
-        .target(name: "KeyPathHashable"),
-        .testTarget(name: "KeyPathHashableTests", dependencies: ["KeyPathHashable"]),
+        .target(name: "HashableByKeyPath"),
+        .testTarget(name: "HashableByKeyPathTests", dependencies: ["HashableByKeyPath"]),
     ]
 )
