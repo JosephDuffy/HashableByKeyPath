@@ -5,7 +5,11 @@
 [![Documentation](https://josephduffy.github.io/HashableByKeyPath/badge.svg)](https://josephduffy.github.io/HashableByKeyPath/)
 [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
 
-`HashableByKeyPath` is a Swift package that aids with adding `Equatable` and `Hashable` conformance by using `KeyPath`s. It helps avoid mistakes such as compairing `lhs.foo` to `lhs.foo`, comparing different properties of `lhs` and `rhs`, or having `==` and `hash(into:)` implementations that check different properties.
+`HashableByKeyPath` helps avoid common mistakes when implementing `Hashable` and `Equatable` conformance:
+
+- Comparing the properties of the same object, e.g. `lhs.foo == lhs.foo`
+- Comparing the wrong properties, e.g. `lhs.foo1 == rhs.foo2`
+- Checking different properties in `==` and `hash(into:)` functions; "[Two instances that are equal must feed the same values to `Hasher` in `hash(into:)`, in the same order](https://developer.apple.com/documentation/swift/hashable)"
 
 ```swift
 struct Foo: HashableByKeyPath {
