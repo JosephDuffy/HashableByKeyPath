@@ -6,7 +6,7 @@ workflows:
           matrix:
             xcode: latest
 
-  workflows/push.yml:
+  workflows/test.yml:
     jobs:
       swiftpm_tests:
         strategy:
