@@ -1,8 +1,9 @@
 name: Tests
 
 on:
-  - push
-  - pull_request_target
+  push:
+    branches: [$default-branch]
+  pull_request:
 
 jobs:
   swiftpm_tests:
