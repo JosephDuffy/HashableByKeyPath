@@ -61,12 +61,11 @@ final class HashableKeyPathProviderTests: XCTestCase {
 
     func testHashableKeyPathProvider() {
         final class Foo: HashableKeyPathProvider {
+            @HashableKeyPathCollectionBuilder<Foo>
             static var hashableKeyPaths: HashableKeyPathCollection<Foo> {
-                HashableKeyPathCollection<Foo> {
-                    \Foo.bar
-                    \Foo.bar2
-                    \Foo.bar3
-                }
+                \Foo.bar
+                \Foo.bar2
+                \Foo.bar3
             }
 
             let bar: String
