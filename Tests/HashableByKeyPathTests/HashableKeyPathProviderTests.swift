@@ -61,7 +61,7 @@ final class HashableKeyPathProviderTests: XCTestCase {
 
     func testHashableKeyPathProvider() {
         final class Foo: HashableKeyPathProvider {
-            static func hashableKeyPaths() -> HashableKeyPathCollection<Foo> {
+            static var hashableKeyPaths: HashableKeyPathCollection<Foo> {
                 HashableKeyPathCollection<Foo> {
                     \Foo.bar
                     \Foo.bar2

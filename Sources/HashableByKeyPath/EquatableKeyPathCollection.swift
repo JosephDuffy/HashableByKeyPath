@@ -63,15 +63,13 @@ public protocol EquatableKeyPathProvider: Equatable {
      Add key paths to `consumer` that will be used for `Hashable` conformance.
 
      If the `addEquatableKeyPaths(to:)` function is omited the same keys will be used for `Equatable` conformance.
-
-     - parameter consumer: The consumer to add the key paths to.
      */
-    static func equatableKeyPaths() -> EquatableKeyPathCollection<Self>
+    static var equatableKeyPaths: EquatableKeyPathCollection<Self> { get }
 }
 
 extension EquatableKeyPathProvider {
     public static func == (lhs: Self, rhs: Self) -> Bool {
-        let collection = Self.equatableKeyPaths()
+        let collection = Self.equatableKeyPaths
         return collection.evaluateEquality(lhs: lhs, rhs: rhs)
     }
 }
