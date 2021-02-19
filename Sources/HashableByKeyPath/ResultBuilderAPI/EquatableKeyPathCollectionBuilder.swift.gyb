@@ -2,7 +2,7 @@
 // This file is generated. Do not edit it.
 #if swift(>=5.4)
 @resultBuilder
-public final class HashableKeyPathCollectionBuilder<Root> {
+public final class EquatableKeyPathCollectionBuilder<Root> {
 %     # 16 is arbitrary, but there has to be a limit somewhere
 %     parameterCountList = range(16)
 %     for parameterCount in parameterCountList:
@@ -12,9 +12,9 @@ public final class HashableKeyPathCollectionBuilder<Root> {
 %             isLast = characterIndex == parametersRange[-1]
 %             character = string.ascii_uppercase[characterIndex]
 %             if isLast:
-        Value${character}: Hashable
+        Value${character}: Equatable
 %             else:
-        Value${character}: Hashable,
+        Value${character}: Equatable,
 %             end
 %         end
     >(
@@ -27,11 +27,11 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         _ keyPath${character}: KeyPath<Root, Value${character}>,
 %             end
 %         end
-    ) -> HashableKeyPathCollection<Root> {
-        var collection = HashableKeyPathCollection<Root>()
+    ) -> EquatableKeyPathCollection<Root> {
+        var collection = EquatableKeyPathCollection<Root>()
 %         for characterIndex in parametersRange:
 %             character = string.ascii_uppercase[characterIndex]
-        collection.addHashableKeyPath(keyPath${character})
+        collection.addEquatableKeyPath(keyPath${character})
 %         end
         return collection
     }
@@ -42,7 +42,7 @@ public final class HashableKeyPathCollectionBuilder<Root> {
 }
 #elseif swift(>=5.1)
 @_functionBuilder
-public final class HashableKeyPathCollectionBuilder<Root> {
+public final class EquatableKeyPathCollectionBuilder<Root> {
 %     # 16 is arbitrary, but there has to be a limit somewhere
 %     parameterCountList = range(16)
 %     for parameterCount in parameterCountList:
@@ -52,9 +52,9 @@ public final class HashableKeyPathCollectionBuilder<Root> {
 %             isLast = characterIndex == parametersRange[-1]
 %             character = string.ascii_uppercase[characterIndex]
 %             if isLast:
-        Value${character}: Hashable
+        Value${character}: Equatable
 %             else:
-        Value${character}: Hashable,
+        Value${character}: Equatable,
 %             end
 %         end
     >(
@@ -67,11 +67,11 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         _ keyPath${character}: KeyPath<Root, Value${character}>,
 %             end
 %         end
-    ) -> HashableKeyPathCollection<Root> {
-        var collection = HashableKeyPathCollection<Root>()
+    ) -> EquatableKeyPathCollection<Root> {
+        var collection = EquatableKeyPathCollection<Root>()
 %         for characterIndex in parametersRange:
 %             character = string.ascii_uppercase[characterIndex]
-        collection.addHashableKeyPath(keyPath${character})
+        collection.addEquatableKeyPath(keyPath${character})
 %         end
         return collection
     }

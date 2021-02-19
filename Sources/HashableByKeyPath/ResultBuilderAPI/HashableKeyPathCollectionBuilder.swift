@@ -1,94 +1,94 @@
 // This file is generated. Do not edit it.
 #if swift(>=5.4)
 @resultBuilder
-public final class EquatableKeyPathCollectionBuilder<Root> {
+public final class HashableKeyPathCollectionBuilder<Root> {
     static func buildBlock<
-        ValueA: Equatable
+        ValueA: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
         _ keyPathC: KeyPath<Root, ValueC>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
         _ keyPathC: KeyPath<Root, ValueC>,
         _ keyPathD: KeyPath<Root, ValueD>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
         _ keyPathC: KeyPath<Root, ValueC>,
         _ keyPathD: KeyPath<Root, ValueD>,
         _ keyPathE: KeyPath<Root, ValueE>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -96,25 +96,25 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathD: KeyPath<Root, ValueD>,
         _ keyPathE: KeyPath<Root, ValueE>,
         _ keyPathF: KeyPath<Root, ValueF>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -123,27 +123,27 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathE: KeyPath<Root, ValueE>,
         _ keyPathF: KeyPath<Root, ValueF>,
         _ keyPathG: KeyPath<Root, ValueG>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -153,29 +153,29 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathF: KeyPath<Root, ValueF>,
         _ keyPathG: KeyPath<Root, ValueG>,
         _ keyPathH: KeyPath<Root, ValueH>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -186,31 +186,31 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathG: KeyPath<Root, ValueG>,
         _ keyPathH: KeyPath<Root, ValueH>,
         _ keyPathI: KeyPath<Root, ValueI>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -222,33 +222,33 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathH: KeyPath<Root, ValueH>,
         _ keyPathI: KeyPath<Root, ValueI>,
         _ keyPathJ: KeyPath<Root, ValueJ>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -261,35 +261,35 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathI: KeyPath<Root, ValueI>,
         _ keyPathJ: KeyPath<Root, ValueJ>,
         _ keyPathK: KeyPath<Root, ValueK>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -303,37 +303,37 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathJ: KeyPath<Root, ValueJ>,
         _ keyPathK: KeyPath<Root, ValueK>,
         _ keyPathL: KeyPath<Root, ValueL>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable,
-        ValueM: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable,
+        ValueM: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -348,39 +348,39 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathK: KeyPath<Root, ValueK>,
         _ keyPathL: KeyPath<Root, ValueL>,
         _ keyPathM: KeyPath<Root, ValueM>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
-        collection.addEquatableKeyPath(keyPathM)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
+        collection.addHashableKeyPath(keyPathM)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable,
-        ValueM: Equatable,
-        ValueN: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable,
+        ValueM: Hashable,
+        ValueN: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -396,41 +396,41 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathL: KeyPath<Root, ValueL>,
         _ keyPathM: KeyPath<Root, ValueM>,
         _ keyPathN: KeyPath<Root, ValueN>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
-        collection.addEquatableKeyPath(keyPathM)
-        collection.addEquatableKeyPath(keyPathN)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
+        collection.addHashableKeyPath(keyPathM)
+        collection.addHashableKeyPath(keyPathN)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable,
-        ValueM: Equatable,
-        ValueN: Equatable,
-        ValueO: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable,
+        ValueM: Hashable,
+        ValueN: Hashable,
+        ValueO: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -447,43 +447,43 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathM: KeyPath<Root, ValueM>,
         _ keyPathN: KeyPath<Root, ValueN>,
         _ keyPathO: KeyPath<Root, ValueO>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
-        collection.addEquatableKeyPath(keyPathM)
-        collection.addEquatableKeyPath(keyPathN)
-        collection.addEquatableKeyPath(keyPathO)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
+        collection.addHashableKeyPath(keyPathM)
+        collection.addHashableKeyPath(keyPathN)
+        collection.addHashableKeyPath(keyPathO)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable,
-        ValueM: Equatable,
-        ValueN: Equatable,
-        ValueO: Equatable,
-        ValueP: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable,
+        ValueM: Hashable,
+        ValueN: Hashable,
+        ValueO: Hashable,
+        ValueP: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -501,117 +501,117 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathN: KeyPath<Root, ValueN>,
         _ keyPathO: KeyPath<Root, ValueO>,
         _ keyPathP: KeyPath<Root, ValueP>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
-        collection.addEquatableKeyPath(keyPathM)
-        collection.addEquatableKeyPath(keyPathN)
-        collection.addEquatableKeyPath(keyPathO)
-        collection.addEquatableKeyPath(keyPathP)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
+        collection.addHashableKeyPath(keyPathM)
+        collection.addHashableKeyPath(keyPathN)
+        collection.addHashableKeyPath(keyPathO)
+        collection.addHashableKeyPath(keyPathP)
         return collection
     }
 }
 #elseif swift(>=5.1)
 @_functionBuilder
-public final class EquatableKeyPathCollectionBuilder<Root> {
+public final class HashableKeyPathCollectionBuilder<Root> {
     static func buildBlock<
-        ValueA: Equatable
+        ValueA: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
         _ keyPathC: KeyPath<Root, ValueC>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
         _ keyPathC: KeyPath<Root, ValueC>,
         _ keyPathD: KeyPath<Root, ValueD>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
         _ keyPathC: KeyPath<Root, ValueC>,
         _ keyPathD: KeyPath<Root, ValueD>,
         _ keyPathE: KeyPath<Root, ValueE>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -619,25 +619,25 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathD: KeyPath<Root, ValueD>,
         _ keyPathE: KeyPath<Root, ValueE>,
         _ keyPathF: KeyPath<Root, ValueF>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -646,27 +646,27 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathE: KeyPath<Root, ValueE>,
         _ keyPathF: KeyPath<Root, ValueF>,
         _ keyPathG: KeyPath<Root, ValueG>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -676,29 +676,29 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathF: KeyPath<Root, ValueF>,
         _ keyPathG: KeyPath<Root, ValueG>,
         _ keyPathH: KeyPath<Root, ValueH>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -709,31 +709,31 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathG: KeyPath<Root, ValueG>,
         _ keyPathH: KeyPath<Root, ValueH>,
         _ keyPathI: KeyPath<Root, ValueI>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -745,33 +745,33 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathH: KeyPath<Root, ValueH>,
         _ keyPathI: KeyPath<Root, ValueI>,
         _ keyPathJ: KeyPath<Root, ValueJ>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -784,35 +784,35 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathI: KeyPath<Root, ValueI>,
         _ keyPathJ: KeyPath<Root, ValueJ>,
         _ keyPathK: KeyPath<Root, ValueK>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -826,37 +826,37 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathJ: KeyPath<Root, ValueJ>,
         _ keyPathK: KeyPath<Root, ValueK>,
         _ keyPathL: KeyPath<Root, ValueL>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable,
-        ValueM: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable,
+        ValueM: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -871,39 +871,39 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathK: KeyPath<Root, ValueK>,
         _ keyPathL: KeyPath<Root, ValueL>,
         _ keyPathM: KeyPath<Root, ValueM>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
-        collection.addEquatableKeyPath(keyPathM)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
+        collection.addHashableKeyPath(keyPathM)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable,
-        ValueM: Equatable,
-        ValueN: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable,
+        ValueM: Hashable,
+        ValueN: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -919,41 +919,41 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathL: KeyPath<Root, ValueL>,
         _ keyPathM: KeyPath<Root, ValueM>,
         _ keyPathN: KeyPath<Root, ValueN>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
-        collection.addEquatableKeyPath(keyPathM)
-        collection.addEquatableKeyPath(keyPathN)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
+        collection.addHashableKeyPath(keyPathM)
+        collection.addHashableKeyPath(keyPathN)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable,
-        ValueM: Equatable,
-        ValueN: Equatable,
-        ValueO: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable,
+        ValueM: Hashable,
+        ValueN: Hashable,
+        ValueO: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -970,43 +970,43 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathM: KeyPath<Root, ValueM>,
         _ keyPathN: KeyPath<Root, ValueN>,
         _ keyPathO: KeyPath<Root, ValueO>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
-        collection.addEquatableKeyPath(keyPathM)
-        collection.addEquatableKeyPath(keyPathN)
-        collection.addEquatableKeyPath(keyPathO)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
+        collection.addHashableKeyPath(keyPathM)
+        collection.addHashableKeyPath(keyPathN)
+        collection.addHashableKeyPath(keyPathO)
         return collection
     }
 
     static func buildBlock<
-        ValueA: Equatable,
-        ValueB: Equatable,
-        ValueC: Equatable,
-        ValueD: Equatable,
-        ValueE: Equatable,
-        ValueF: Equatable,
-        ValueG: Equatable,
-        ValueH: Equatable,
-        ValueI: Equatable,
-        ValueJ: Equatable,
-        ValueK: Equatable,
-        ValueL: Equatable,
-        ValueM: Equatable,
-        ValueN: Equatable,
-        ValueO: Equatable,
-        ValueP: Equatable
+        ValueA: Hashable,
+        ValueB: Hashable,
+        ValueC: Hashable,
+        ValueD: Hashable,
+        ValueE: Hashable,
+        ValueF: Hashable,
+        ValueG: Hashable,
+        ValueH: Hashable,
+        ValueI: Hashable,
+        ValueJ: Hashable,
+        ValueK: Hashable,
+        ValueL: Hashable,
+        ValueM: Hashable,
+        ValueN: Hashable,
+        ValueO: Hashable,
+        ValueP: Hashable
     >(
         _ keyPathA: KeyPath<Root, ValueA>,
         _ keyPathB: KeyPath<Root, ValueB>,
@@ -1024,24 +1024,24 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         _ keyPathN: KeyPath<Root, ValueN>,
         _ keyPathO: KeyPath<Root, ValueO>,
         _ keyPathP: KeyPath<Root, ValueP>
-    ) -> EquatableKeyPathCollection<Root> {
-        var collection = EquatableKeyPathCollection<Root>()
-        collection.addEquatableKeyPath(keyPathA)
-        collection.addEquatableKeyPath(keyPathB)
-        collection.addEquatableKeyPath(keyPathC)
-        collection.addEquatableKeyPath(keyPathD)
-        collection.addEquatableKeyPath(keyPathE)
-        collection.addEquatableKeyPath(keyPathF)
-        collection.addEquatableKeyPath(keyPathG)
-        collection.addEquatableKeyPath(keyPathH)
-        collection.addEquatableKeyPath(keyPathI)
-        collection.addEquatableKeyPath(keyPathJ)
-        collection.addEquatableKeyPath(keyPathK)
-        collection.addEquatableKeyPath(keyPathL)
-        collection.addEquatableKeyPath(keyPathM)
-        collection.addEquatableKeyPath(keyPathN)
-        collection.addEquatableKeyPath(keyPathO)
-        collection.addEquatableKeyPath(keyPathP)
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        collection.addHashableKeyPath(keyPathA)
+        collection.addHashableKeyPath(keyPathB)
+        collection.addHashableKeyPath(keyPathC)
+        collection.addHashableKeyPath(keyPathD)
+        collection.addHashableKeyPath(keyPathE)
+        collection.addHashableKeyPath(keyPathF)
+        collection.addHashableKeyPath(keyPathG)
+        collection.addHashableKeyPath(keyPathH)
+        collection.addHashableKeyPath(keyPathI)
+        collection.addHashableKeyPath(keyPathJ)
+        collection.addHashableKeyPath(keyPathK)
+        collection.addHashableKeyPath(keyPathL)
+        collection.addHashableKeyPath(keyPathM)
+        collection.addHashableKeyPath(keyPathN)
+        collection.addHashableKeyPath(keyPathO)
+        collection.addHashableKeyPath(keyPathP)
         return collection
     }
 }
