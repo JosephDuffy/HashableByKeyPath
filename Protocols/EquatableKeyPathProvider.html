@@ -14,8 +14,8 @@
     <a title="EquatableKeyPathProvider Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (13% documented)</p>
-        <p class="header-right"><a href="https://github.com/JosephDuffy/KeyPathHashable"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/JosephDuffy/HashableByKeyPath"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -29,8 +29,28 @@
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/EquatableKeyPathCollectionBuilder">EquatableKeyPathCollectionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:17HashableByKeyPath09EquatablecD17CollectionBuilderC">EquatableKeyPathCollectionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/HashableKeyPathCollectionBuilder">HashableKeyPathCollectionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:17HashableByKeyPath0acD17CollectionBuilderC">HashableKeyPathCollectionBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EquatableByKeyPath.html">EquatableByKeyPath</a>
+              </li>
               <li class="nav-group-task">
                 <a href="../Protocols/EquatableKeyPathConsumer.html">EquatableKeyPathConsumer</a>
               </li>
@@ -38,10 +58,24 @@
                 <a href="../Protocols/EquatableKeyPathProvider.html">EquatableKeyPathProvider</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/HashableByKeyPath.html">HashableByKeyPath</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/HashableKeyPathConsumer.html">HashableKeyPathConsumer</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/HashableKeyPathProvider.html">HashableKeyPathProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:17HashableByKeyPath09EquatablecD10CollectionV">EquatableKeyPathCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a>
               </li>
             </ul>
           </li>
@@ -57,7 +91,8 @@
 
                 </div>
               </div>
-            
+            <p>A protocol that defines a single function that can be used to synthesise <code>Equatable</code> and <code>Hashable</code> conformance.</p>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -65,9 +100,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15KeyPathHashable09EquatableaB8ProviderP03adddA5Paths2toyqd__z_t4RootQyd__RszAA0daB8ConsumerRd__lFZ"></a>
-                    <a name="//apple_ref/swift/Method/addEquatableKeyPaths(to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15KeyPathHashable09EquatableaB8ProviderP03adddA5Paths2toyqd__z_t4RootQyd__RszAA0daB8ConsumerRd__lFZ">addEquatableKeyPaths(to:<wbr>)</a>
+                    <a name="/s:17HashableByKeyPath09EquatablecD8ProviderP09equatableC5PathsAA0ecD10CollectionVyxGvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/equatableKeyPaths" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath09EquatablecD8ProviderP09equatableC5PathsAA0ecD10CollectionVyxGvpZ">equatableKeyPaths</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -75,13 +110,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>A collection of <code>KeyPath</code>s that result in values used for <code>Equatable</code> conformance.</p>
+
+<p>Use the <code><a href="../Classes.html#/EquatableKeyPathCollectionBuilder">EquatableKeyPathCollectionBuilder</a></code> result builder to implement this property.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="n">addEquatableKeyPaths</span><span class="o">&lt;</span><span class="kt">Consumer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">to</span> <span class="nv">consumer</span><span class="p">:</span> <span class="k">inout</span> <span class="kt">Consumer</span><span class="p">)</span> <span class="k">where</span> <span class="k">Self</span> <span class="o">==</span> <span class="kt">Consumer</span><span class="o">.</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">Consumer</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/EquatableKeyPathConsumer.html">EquatableKeyPathConsumer</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">equatableKeyPaths</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath09EquatablecD10CollectionV">EquatableKeyPathCollection</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -122,7 +160,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Joseph Duffy</a>. All rights reserved. (Last updated: 2020-04-28)</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Joseph Duffy</a>. All rights reserved. (Last updated: 2021-02-19)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
