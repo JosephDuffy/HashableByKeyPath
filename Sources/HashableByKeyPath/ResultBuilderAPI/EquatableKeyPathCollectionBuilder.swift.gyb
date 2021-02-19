@@ -1,0 +1,83 @@
+% import string
+// This file is generated. Do not edit it.
+#if swift(>=5.4)
+@resultBuilder
+public final class EquatableKeyPathCollectionBuilder<Root> {
+%     # 16 is arbitrary, but there has to be a limit somewhere
+%     parameterCountList = range(16)
+%     for parameterCount in parameterCountList:
+%         parametersRange = range(parameterCount + 1)
+    static func buildBlock<
+%         for characterIndex in parametersRange:
+%             isLast = characterIndex == parametersRange[-1]
+%             character = string.ascii_uppercase[characterIndex]
+%             if isLast:
+        Value${character}: Equatable
+%             else:
+        Value${character}: Equatable,
+%             end
+%         end
+    >(
+%         for characterIndex in parametersRange:
+%             character = string.ascii_uppercase[characterIndex]
+%             isLast = characterIndex == parametersRange[-1]
+%             if isLast:
+        _ keyPath${character}: KeyPath<Root, Value${character}>
+%             else:
+        _ keyPath${character}: KeyPath<Root, Value${character}>,
+%             end
+%         end
+    ) -> EquatableKeyPathCollection<Root> {
+        var collection = EquatableKeyPathCollection<Root>()
+%         for characterIndex in parametersRange:
+%             character = string.ascii_uppercase[characterIndex]
+        collection.addEquatableKeyPath(keyPath${character})
+%         end
+        return collection
+    }
+%         if parameterCount != parameterCountList[-1]:
+
+%         end
+%     end
+}
+#elseif swift(>=5.1)
+@_functionBuilder
+public final class EquatableKeyPathCollectionBuilder<Root> {
+%     # 16 is arbitrary, but there has to be a limit somewhere
+%     parameterCountList = range(16)
+%     for parameterCount in parameterCountList:
+%         parametersRange = range(parameterCount + 1)
+    static func buildBlock<
+%         for characterIndex in parametersRange:
+%             isLast = characterIndex == parametersRange[-1]
+%             character = string.ascii_uppercase[characterIndex]
+%             if isLast:
+        Value${character}: Equatable
+%             else:
+        Value${character}: Equatable,
+%             end
+%         end
+    >(
+%         for characterIndex in parametersRange:
+%             character = string.ascii_uppercase[characterIndex]
+%             isLast = characterIndex == parametersRange[-1]
+%             if isLast:
+        _ keyPath${character}: KeyPath<Root, Value${character}>
+%             else:
+        _ keyPath${character}: KeyPath<Root, Value${character}>,
+%             end
+%         end
+    ) -> EquatableKeyPathCollection<Root> {
+        var collection = EquatableKeyPathCollection<Root>()
+%         for characterIndex in parametersRange:
+%             character = string.ascii_uppercase[characterIndex]
+        collection.addEquatableKeyPath(keyPath${character})
+%         end
+        return collection
+    }
+%         if parameterCount != parameterCountList[-1]:
+
+%         end
+%     end
+}
+#endif
