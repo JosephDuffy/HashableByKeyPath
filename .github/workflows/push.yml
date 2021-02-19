@@ -11,21 +11,21 @@ jobs:
         xcode: ["11.4"]
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Select Xcode ${{ matrix.xcode }}
-      run: sudo xcode-select --switch /Applications/Xcode_${{ matrix.xcode }}.app
+      - name: Select Xcode ${{ matrix.xcode }}
+        run: sudo xcode-select --switch /Applications/Xcode_${{ matrix.xcode }}.app
 
-    - name: SwiftPM tests
-      run: swift test --enable-code-coverage
+      - name: SwiftPM tests
+        run: swift test --enable-code-coverage
 
-    - name: Convert coverage to lcov
-      run: xcrun llvm-cov export -format="lcov" .build/debug/HashableByKeyPathPackageTests.xctest/Contents/MacOS/HashableByKeyPathPackageTests -instr-profile .build/debug/codecov/default.profdata > coverage.lcov
+      - name: Convert coverage to lcov
+        run: xcrun llvm-cov export -format="lcov" .build/debug/HashableByKeyPathPackageTests.xctest/Contents/MacOS/HashableByKeyPathPackageTests -instr-profile .build/debug/codecov/default.profdata > coverage.lcov
 
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        fail_ci_if_error: true
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          fail_ci_if_error: true
 
   check-gyb-run:
     name: Check GYB has been run
@@ -40,4 +40,3 @@ jobs:
 
       - name: Check GYB was run before commit
         run: git diff --exit-code
-
