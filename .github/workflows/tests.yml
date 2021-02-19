@@ -1,6 +1,10 @@
 name: Tests
 
-on: [push]
+on:
+  push:
+  pull_request:
+    branches:
+      - "**:**" # PRs from forks have a prefix with `owner:`
 
 jobs:
   swiftpm_tests:
@@ -8,8 +12,9 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
-        xcode: ["11.4"]
-
+        xcode:
+          - "11.7"
+          - "12.4"
     steps:
       - uses: actions/checkout@v2
 
@@ -26,6 +31,23 @@ jobs:
         uses: codecov/codecov-action@v1
         with:
           fail_ci_if_error: true
+
+  linux_tests:
+    name: Swift ${{ matrix.swift }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    container:
+      image: swift:${{ matrix.swift }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        swift: ["5.2", "5.3"]
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: swift test
+        run: swift test --enable-test-discovery
 
   check-gyb-run:
     name: Check GYB has been run

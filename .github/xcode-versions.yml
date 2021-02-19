@@ -1,0 +1,17 @@
+workflows:
+  workflows/release.yml:
+    jobs:
+      build_docs:
+        strategy:
+          matrix:
+            xcode: latest
+
+  workflows/tests.yml:
+    jobs:
+      swiftpm_tests:
+        strategy:
+          matrix:
+            xcode:
+              - last-major
+              - latest
+              - latest-beta
