@@ -3,12 +3,6 @@ public struct EquatableKeyPathCollection<Root> {
 
     private var closures: [EquateClosure] = []
 
-    public init(
-        @EquatableKeyPathCollectionBuilder<Root> builder: () -> EquatableKeyPathCollection<Root>
-    ) {
-        self = builder()
-    }
-
     internal init() {}
 
     internal mutating func addEquatableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Equatable {

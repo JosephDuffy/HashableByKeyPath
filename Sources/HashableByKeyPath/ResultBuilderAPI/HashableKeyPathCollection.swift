@@ -5,12 +5,6 @@ public struct HashableKeyPathCollection<Root> {
 
     private var closures: [(_ root: Root, _ hasher: inout Hasher) -> Void] = []
 
-    public init(
-        @HashableKeyPathCollectionBuilder<Root> builder: () -> HashableKeyPathCollection<Root>
-    ) {
-        self = builder()
-    }
-
     internal init() {}
 
     internal mutating func addHashableKeyPath<KeyType>(_ keyPath: KeyPath<Root, KeyType>) where KeyType: Hashable {
