@@ -1,3 +1,6 @@
+/// A collection of `KeyPath`s that have a resulting value that is `Hashable`.
+///
+/// This struct is not created directly, but by applying the `HashableKeyPathCollectionBuilder` result builder.
 public struct HashableKeyPathCollection<Root> {
     private typealias EquateClosure = (_ lhs: Root, _ rhs: Root) -> Bool
 

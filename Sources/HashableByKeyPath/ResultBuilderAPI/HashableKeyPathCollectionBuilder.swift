@@ -1,7 +1,12 @@
 // This file is generated. Do not edit it.
 #if swift(>=5.4)
+/// A result builder used to build `HashableKeyPathCollection` values.
 @resultBuilder
 public final class HashableKeyPathCollectionBuilder<Root> {
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable
     >(
@@ -12,6 +17,11 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable
@@ -25,6 +35,12 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -41,6 +57,13 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -60,6 +83,14 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -82,6 +113,15 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -107,6 +147,16 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -135,6 +185,17 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -166,6 +227,18 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -200,6 +273,19 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -237,6 +323,20 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -277,6 +377,21 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -320,6 +435,22 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathM: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -366,6 +497,23 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathM: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathN: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -415,6 +563,24 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathM: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathN: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathO: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -467,6 +633,25 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathM: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathN: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathO: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathP: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -523,8 +708,13 @@ public final class HashableKeyPathCollectionBuilder<Root> {
     }
 }
 #elseif swift(>=5.1)
+/// A function builder used to build `HashableKeyPathCollection` values.
 @_functionBuilder
 public final class HashableKeyPathCollectionBuilder<Root> {
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable
     >(
@@ -535,6 +725,11 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable
@@ -548,6 +743,12 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -564,6 +765,13 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -583,6 +791,14 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -605,6 +821,15 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -630,6 +855,16 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -658,6 +893,17 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -689,6 +935,18 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -723,6 +981,19 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -760,6 +1031,20 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -800,6 +1085,21 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -843,6 +1143,22 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathM: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -889,6 +1205,23 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathM: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathN: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -938,6 +1271,24 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathM: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathN: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathO: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,
@@ -990,6 +1341,25 @@ public final class HashableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathB: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathC: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathD: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathE: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathF: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathG: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathH: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathI: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathJ: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathK: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathL: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathM: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathN: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathO: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - parameter keyPathP: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    /// - returns: The built `HashableKeyPathCollection`.
     static func buildBlock<
         ValueA: Hashable,
         ValueB: Hashable,

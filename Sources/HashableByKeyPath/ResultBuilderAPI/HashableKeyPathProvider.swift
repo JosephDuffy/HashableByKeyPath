@@ -3,9 +3,9 @@
  */
 public protocol HashableKeyPathProvider: Hashable {
     /**
-     Add key paths to `consumer` that will be used for `Hashable` conformance.
+     A collection of `KeyPath`s that result in values used for `Hashable` conformance.
 
-     If the `addEquatableKeyPaths(to:)` function is omited the same keys will be used for `Equatable` conformance.
+     Use the `HashableKeyPathCollectionBuilder` result builder to implement this property.
      */
     static var hashableKeyPaths: HashableKeyPathCollection<Self> { get }
 }

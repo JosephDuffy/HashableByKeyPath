@@ -1,7 +1,12 @@
 // This file is generated. Do not edit it.
 #if swift(>=5.4)
+/// A result builder used to build `EquatableKeyPathCollection` values.
 @resultBuilder
 public final class EquatableKeyPathCollectionBuilder<Root> {
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable
     >(
@@ -12,6 +17,11 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable
@@ -25,6 +35,12 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -41,6 +57,13 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -60,6 +83,14 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -82,6 +113,15 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -107,6 +147,16 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -135,6 +185,17 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -166,6 +227,18 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -200,6 +273,19 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -237,6 +323,20 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -277,6 +377,21 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -320,6 +435,22 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathM: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -366,6 +497,23 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathM: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathN: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -415,6 +563,24 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathM: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathN: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathO: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -467,6 +633,25 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathM: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathN: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathO: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathP: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -523,8 +708,13 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
     }
 }
 #elseif swift(>=5.1)
+/// A function builder used to build `EquatableKeyPathCollection` values.
 @_functionBuilder
 public final class EquatableKeyPathCollectionBuilder<Root> {
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable
     >(
@@ -535,6 +725,11 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable
@@ -548,6 +743,12 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -564,6 +765,13 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -583,6 +791,14 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -605,6 +821,15 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -630,6 +855,16 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -658,6 +893,17 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -689,6 +935,18 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -723,6 +981,19 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -760,6 +1031,20 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -800,6 +1085,21 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -843,6 +1143,22 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathM: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -889,6 +1205,23 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathM: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathN: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -938,6 +1271,24 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathM: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathN: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathO: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
@@ -990,6 +1341,25 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
         return collection
     }
 
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    /// - parameter keyPathA: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathB: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathC: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathD: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathE: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathF: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathG: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathH: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathI: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathJ: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathK: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathL: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathM: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathN: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathO: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - parameter keyPathP: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    /// - returns: The built `EquatableKeyPathCollection`.
     static func buildBlock<
         ValueA: Equatable,
         ValueB: Equatable,
