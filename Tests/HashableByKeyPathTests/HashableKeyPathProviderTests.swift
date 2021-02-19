@@ -2,10 +2,9 @@ import XCTest
 @testable import HashableByKeyPath
 
 final class HashableKeyPathProviderTests: XCTestCase {
-
     func testHashableByKeyPath() {
-        struct Foo: HashableByKeyPath {
-            static func addHashableKeyPaths<Consumer>(to consumer: inout Consumer) where Self == Consumer.Root, Consumer: HashableKeyPathConsumer {
+        class Foo: HashableByKeyPath {
+            static func addHashableKeyPaths<Consumer>(to consumer: inout Consumer) where Consumer.Root: Foo, Consumer: HashableKeyPathConsumer {
                 consumer.addHashableKeyPath(\.bar)
                 consumer.addHashableKeyPath(\.bar2)
                 consumer.addHashableKeyPath(\.bar3)
@@ -22,10 +21,11 @@ final class HashableKeyPathProviderTests: XCTestCase {
             }
         }
 
-        let foo1 = Foo(bar: "bar", bar2: "bar2", bar3: "bar3")
-        let foo2 = Foo(bar: "bar", bar2: "bar2", bar3: "bar3")
-        let foo3 = Foo(bar: "bar2", bar2: "bar2", bar3: "bar3")
-        let foo4 = Foo(bar: "bar2", bar2: "bar", bar3: "bar3")
+        let foo1 = Foo(bar: "bar", bar2: "bar_", bar3: "bar__")
+        let foo2 = Foo(bar: "bar", bar2: "bar_", bar3: "bar__")
+        let foo3 = Foo(bar: "bar_", bar2: "bar_", bar3: "bar__")
+        let foo4 = Foo(bar: "bar", bar2: "bar__", bar3: "bar__")
+        let foo5 = Foo(bar: "bar", bar2: "bar_", bar3: "bar___")
 
         XCTAssertEqual(foo1, foo1)
         XCTAssertEqual(foo1, foo2)
@@ -34,18 +34,27 @@ final class HashableKeyPathProviderTests: XCTestCase {
         XCTAssertNotEqual(foo1.hashValue, foo3.hashValue)
         XCTAssertNotEqual(foo1, foo4)
         XCTAssertNotEqual(foo1.hashValue, foo4.hashValue)
+        XCTAssertNotEqual(foo1, foo5)
+        XCTAssertNotEqual(foo1.hashValue, foo5.hashValue)
 
         XCTAssertEqual(foo2, foo2)
         XCTAssertNotEqual(foo2, foo3)
         XCTAssertNotEqual(foo2.hashValue, foo3.hashValue)
         XCTAssertNotEqual(foo2, foo4)
         XCTAssertNotEqual(foo2.hashValue, foo4.hashValue)
+        XCTAssertNotEqual(foo2, foo5)
+        XCTAssertNotEqual(foo2.hashValue, foo5.hashValue)
 
         XCTAssertEqual(foo3, foo3)
         XCTAssertNotEqual(foo3, foo4)
         XCTAssertNotEqual(foo3.hashValue, foo4.hashValue)
+        XCTAssertNotEqual(foo3, foo5)
+        XCTAssertNotEqual(foo3.hashValue, foo5.hashValue)
 
         XCTAssertEqual(foo4, foo4)
-    }
+        XCTAssertNotEqual(foo4, foo5)
+        XCTAssertNotEqual(foo4.hashValue, foo5.hashValue)
 
+        XCTAssertEqual(foo5, foo5)
+    }
 }

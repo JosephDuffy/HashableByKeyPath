@@ -1,0 +1,94 @@
+% import string
+% # 16 is arbitrary, but there has to be a limit somewhere
+% parameterCountList = range(16)
+// This file is generated. Do not edit it.
+import XCTest
+@testable import HashableByKeyPath
+
+final class HashableKeyPathCollectionBuilderTests: XCTestCase {
+% for parameterCount in parameterCountList:
+%     parametersRange = range(parameterCount + 1)
+    func testHashableKeyPathProvider${parameterCount+1}Parameter() {
+        final class TestObject: HashableKeyPathProvider {
+            @HashableKeyPathCollectionBuilder<TestObject>
+            static var hashableKeyPaths: HashableKeyPathCollection<TestObject> {
+%     for characterIndex in parametersRange:
+%         character = string.ascii_uppercase[characterIndex]
+                \TestObject.property${character}
+%     end
+            }
+
+%     for characterIndex in parametersRange:
+%         character = string.ascii_uppercase[characterIndex]
+            let property${character}: String
+%     end
+
+            init(
+%     for characterIndex in parametersRange:
+%         character = string.ascii_uppercase[characterIndex]
+%         isLast = characterIndex == parametersRange[-1]
+%         if isLast:
+                property${character}: String
+%         else:
+                property${character}: String,
+%         end
+%     end
+            ) {
+%     for characterIndex in parametersRange:
+%         character = string.ascii_uppercase[characterIndex]
+                self.property${character} = property${character}
+%     end
+            }
+        }
+
+        let testObjectA = TestObject(
+%     for characterIndex in parametersRange:
+%         character = string.ascii_uppercase[characterIndex]
+%         isLast = characterIndex == parametersRange[-1]
+%         if isLast:
+            property${character}: "prop ${character}"
+%         else:
+            property${character}: "prop ${character}",
+%         end
+%     end
+        )
+        let testObjectEqualA = TestObject(
+%     for characterIndex in parametersRange:
+%         character = string.ascii_uppercase[characterIndex]
+%         isLast = characterIndex == parametersRange[-1]
+%         if isLast:
+            property${character}: "prop ${character}"
+%         else:
+            property${character}: "prop ${character}",
+%         end
+%     end
+        )
+
+        XCTAssertEqual(testObjectA, testObjectA)
+        XCTAssertEqual(testObjectA, testObjectEqualA)
+
+        XCTAssertEqual(testObjectA.hashValue, testObjectEqualA.hashValue)
+
+        let testObjectDifferentPropertyA = TestObject(
+%     for characterIndex in parametersRange:
+%         character = string.ascii_uppercase[characterIndex]
+%         isLast = characterIndex == parametersRange[-1]
+%         if isLast:
+            property${character}: "different prop ${character}"
+%         else:
+            property${character}: "prop ${character}",
+%         end
+%     end
+        )
+
+        XCTAssertEqual(testObjectDifferentPropertyA, testObjectDifferentPropertyA)
+        XCTAssertEqual(testObjectDifferentPropertyA.hashValue, testObjectDifferentPropertyA.hashValue)
+
+        XCTAssertNotEqual(testObjectA, testObjectDifferentPropertyA)
+        XCTAssertNotEqual(testObjectEqualA, testObjectDifferentPropertyA)
+
+        XCTAssertNotEqual(testObjectA.hashValue, testObjectDifferentPropertyA.hashValue)
+        XCTAssertNotEqual(testObjectEqualA.hashValue, testObjectDifferentPropertyA.hashValue)
+    }
+% end
+}
