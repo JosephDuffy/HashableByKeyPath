@@ -13,6 +13,62 @@
 - Checking different properties in `==` and `hash(into:)` functions; "[Two instances that are equal must feed the same values to `Hasher` in `hash(into:)`, in the same order](https://developer.apple.com/documentation/swift/hashable)"
 
 ```swift
+struct Foo: HashableKeyPathProvider {
+    @HashableKeyPathCollectionBuilder<TestObject>
+    static var hashableKeyPaths: HashableKeyPathCollection<Foo> {
+        \Foo.bar1
+        \Foo.bar2
+        \Foo.bar3
+    }
+
+    var bar1: String
+    var bar2: String
+    var bar3: Int
+}
+
+let foo1 = Foo(bar: "value", bar2: "value2", bar3: "value3")
+let foo2 = Foo(bar: "value", bar2: "value2", bar3: "value3")
+let foo3 = Foo(bar: "value2", bar2: "value2", bar3: "value3")
+let foos: Set = [foo1, foo2]
+
+foo1 == foo1 // true
+foo1 == foo2 // true
+foo1 == foo3 // false
+foo2 == foo3 // false
+foos.count // 1
+foos.contains(foo2) // true
+foos.contains(foo3) // false
+```
+
+If the type only needs to conform to `Equatable` the type can conform to `EquatableByKeyPath`:
+
+```swift
+struct Foo: EquatableKeyPathProvider {
+    @EquatableKeyPathCollectionBuilder<TestObject>
+    static var equatableKeyPaths: EquatableKeyPathCollection<Foo> {
+        \Foo.bar1
+        \Foo.bar2
+        \Foo.bar3
+    }
+
+    var bar1: String
+    var bar2: String
+    var bar3: Int
+}
+
+let foo1 = Foo(bar: "value", bar2: "value2", bar3: "value3")
+let foo2 = Foo(bar: "value", bar2: "value2", bar3: "value3")
+let foo3 = Foo(bar: "value2", bar2: "value2", bar3: "value3")
+
+foo1 == foo1 // true
+foo1 == foo2 // true
+foo1 == foo3 // false
+foo2 == foo3 // false
+```
+
+When using a non-final class the `HashableKeyPathProvider` and `EquatableKeyPathProvider` protocols cannot be used. In this case the `HashableByKeyPath` and `EquatableByKeyPath` protocols should be used:
+
+```swift
 struct Foo: HashableByKeyPath {
     static func addHashableKeyPaths<Consumer: HashableKeyPathConsumer>(to consumer: inout Consumer) where Consumer.Root == Self {
         consumer.addHashableKeyPath(\.bar1)
@@ -42,7 +98,7 @@ foos.contains(foo3) // false
 If the type only needs to conform to `Equatable` the type can conform to `EquatableByKeyPath`:
 
 ```swift
-struct Foo: addEquatableKeyPaths {
+struct Foo: EquatableByKeyPath {
     static func addHashableKeyPaths<Consumer: HashableKeyPathConsumer>(to consumer: inout Consumer) where Consumer.Root == Self {
         consumer.addEquatableKeyPath(\.bar1)
         consumer.addEquatableKeyPath(\.bar2)
