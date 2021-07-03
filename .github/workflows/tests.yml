@@ -8,7 +8,7 @@ on:
 
 jobs:
   swiftpm_tests:
-    name: SwiftPM on Xcode ${{ matrix.xcode }}
+    name: ${{ matrix.platform }} Tests with Swift ${{ matrix.swift }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
