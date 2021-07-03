@@ -39,7 +39,6 @@ jobs:
           swift: ${{ matrix.swift }}
           platform: ${{ matrix.platform }}
           code-coverage: true
-          warnings-as-errors: true
 
       - name: Convert coverage to lcov
         run: xcrun llvm-cov export -format="lcov" .build/debug/HashableByKeyPathPackageTests.xctest/Contents/MacOS/HashableByKeyPathPackageTests -instr-profile .build/debug/codecov/default.profdata > coverage.lcov
