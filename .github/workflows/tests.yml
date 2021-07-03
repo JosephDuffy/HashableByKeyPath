@@ -22,7 +22,6 @@ jobs:
           - watchOS
           - tvOS
           - iOS
-          - mac-catalyst
         os:
           - macos-11
         include:
