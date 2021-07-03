@@ -34,7 +34,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - use: mxcl/xcodebuild@v1
+      - uses: mxcl/xcodebuild@v1
         with:
           swift: ${{ matrix.swift }}
           platform: ${{ matrix.platform }}
