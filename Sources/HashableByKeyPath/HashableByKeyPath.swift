@@ -1,7 +1,7 @@
 /**
  A protocol that defines a single function that can be used to synthesise `Equatable` and `Hashable` conformance.
  */
-public protocol HashableByKeyPath: EquatableByKeyPath, Hashable {
+public protocol HashableByKeyPath: Hashable {
 
     /**
      Add key paths to `consumer` that will be used for `Hashable` conformance.
@@ -16,10 +16,10 @@ public protocol HashableByKeyPath: EquatableByKeyPath, Hashable {
 
 extension HashableByKeyPath {
 
-    public static func addEquatableKeyPaths<Consumer: EquatableKeyPathConsumer>(to consumer: inout Consumer) where Consumer.Root == Self {
-        var hashableKeyPathForwarder = HashableKeyPathForwarder(equatableKeyPathConsumer: consumer)
-        addHashableKeyPaths(to: &hashableKeyPathForwarder)
-        consumer = hashableKeyPathForwarder.equatableKeyPathConsumer
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        var aggregator = HashableKeyPathAggregator<Self>()
+        addHashableKeyPaths(to: &aggregator)
+        return aggregator.evaluateEquality(lhs: lhs, rhs: rhs)
     }
 
     public func hash(into hasher: inout Hasher) {
