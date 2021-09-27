@@ -6,7 +6,7 @@ public protocol HashableByKeyPath: EquatableByKeyPath, Hashable {
     /**
      Add key paths to `consumer` that will be used for `Hashable` conformance.
 
-     If the `addEquatableKeyPaths(to:)` function is omited the same keys will be used for `Equatable` conformance.
+     If the `addEquatableKeyPaths(to:)` function is omitted the same keys will be used for `Equatable` conformance.
 
      - parameter consumer: The consumer to add the key paths to.
      */
@@ -23,9 +23,9 @@ extension HashableByKeyPath {
     }
 
     public func hash(into hasher: inout Hasher) {
-        var hashableKeyPathForwarder = HashableKeyPathAggregator<Self>()
-        Self.addHashableKeyPaths(to: &hashableKeyPathForwarder)
-        return hashableKeyPathForwarder.hashValues(from: self, into: &hasher)
+        var hashableKeyPathAggregator = HashableKeyPathAggregator<Self>()
+        Self.addHashableKeyPaths(to: &hashableKeyPathAggregator)
+        return hashableKeyPathAggregator.hashValues(from: self, into: &hasher)
     }
 
 }

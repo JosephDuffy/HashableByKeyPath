@@ -12,4 +12,8 @@ internal struct HashableKeyPathForwarder<Root, Consumer: EquatableKeyPathConsume
         equatableKeyPathConsumer.addEquatableKeyPath(keyPath)
     }
 
+    internal mutating func addCustomEquator<KeyType>(forKeyPath keyPath: KeyPath<Root, KeyType>, equator: @escaping (KeyType, KeyType) -> Bool) where KeyType: Hashable {
+        equatableKeyPathConsumer.addCustomEquator(forKeyPath: keyPath, equator: equator)
+    }
+
 }
