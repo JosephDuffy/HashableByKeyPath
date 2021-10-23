@@ -1,0 +1,2657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HashableKeyPathCollectionBuilder Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/HashableKeyPathCollectionBuilder" class="dashAnchor"></a>
+    <a title="HashableKeyPathCollectionBuilder Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (98% documented)</p>
+        <p class="header-right"><a href="https://github.com/JosephDuffy/HashableByKeyPath"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HashableKeyPathCollectionBuilder Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EquatableKeyPathCollectionBuilder.html">EquatableKeyPathCollectionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EquatableKeyPathCollectionBuilder.html">EquatableKeyPathCollectionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HashableKeyPathCollectionBuilder.html">HashableKeyPathCollectionBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HashableKeyPathCollectionBuilder.html">HashableKeyPathCollectionBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EquatableByKeyPath.html">EquatableByKeyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EquatableKeyPathConsumer.html">EquatableKeyPathConsumer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/EquatableKeyPathProvider.html">EquatableKeyPathProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HashableByKeyPath.html">HashableByKeyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HashableKeyPathConsumer.html">HashableKeyPathConsumer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HashableKeyPathProvider.html">HashableKeyPathProvider</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:17HashableByKeyPath09EquatablecD10CollectionV">EquatableKeyPathCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HashableKeyPathCollectionBuilder</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@_functionBuilder</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">HashableKeyPathCollectionBuilder</span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>A function builder used to build <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> values.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__GSHRd__lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__GSHRd__lFZ">buildBlock(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GtSHRd__SHRd_0_r0_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GtSHRd__SHRd_0_r0_lFZ">buildBlock(_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GtSHRd__SHRd_0_SHRd_1_r1_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GtSHRd__SHRd_0_SHRd_1_r1_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GtSHRd__SHRd_0_SHRd_1_SHRd_2_r2_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GtSHRd__SHRd_0_SHRd_1_SHRd_2_r2_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_r3_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_r3_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_r4_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_r4_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_r5_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_r5_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_r6_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_r6_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_r7_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_r7_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueI</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathI</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueI</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_r8_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_r8_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueI</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueJ</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathI</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueI</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathJ</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueJ</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathJ</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_r9_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_r9_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueI</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueJ</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueK</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathI</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueI</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathJ</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueJ</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathK</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueK</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathJ</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathK</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_r10_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_r10_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueI</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueJ</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueK</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueL</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathI</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueI</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathJ</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueJ</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathK</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueK</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathL</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueL</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathJ</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathK</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GAIyxqd_11_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_SHRd_11_r11_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GAIyxqd_11_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_SHRd_11_r11_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueI</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueJ</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueK</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueL</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueM</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathI</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueI</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathJ</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueJ</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathK</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueK</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathL</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueL</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathM</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueM</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathJ</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathK</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathM</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GAIyxqd_11_GAIyxqd_12_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_SHRd_11_SHRd_12_r12_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GAIyxqd_11_GAIyxqd_12_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_SHRd_11_SHRd_12_r12_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueI</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueJ</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueK</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueL</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueM</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueN</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathI</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueI</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathJ</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueJ</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathK</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueK</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathL</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueL</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathM</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueM</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathN</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueN</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathJ</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathK</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathM</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathN</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GAIyxqd_11_GAIyxqd_12_GAIyxqd_13_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_SHRd_11_SHRd_12_SHRd_13_r13_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GAIyxqd_11_GAIyxqd_12_GAIyxqd_13_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_SHRd_11_SHRd_12_SHRd_13_r13_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueI</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueJ</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueK</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueL</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueM</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueN</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueO</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathI</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueI</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathJ</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueJ</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathK</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueK</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathL</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueL</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathM</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueM</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathN</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueN</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathO</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueO</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathJ</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathK</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathM</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathN</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathO</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GAIyxqd_11_GAIyxqd_12_GAIyxqd_13_GAIyxqd_14_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_SHRd_11_SHRd_12_SHRd_13_SHRd_14_r14_lFZ"></a>
+                    <a name="//apple_ref/swift/Method/buildBlock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:17HashableByKeyPath0acD17CollectionBuilderC10buildBlockyAA0acdE0VyxGs0cD0Cyxqd__G_AIyxqd_0_GAIyxqd_1_GAIyxqd_2_GAIyxqd_3_GAIyxqd_4_GAIyxqd_5_GAIyxqd_6_GAIyxqd_7_GAIyxqd_8_GAIyxqd_9_GAIyxqd_10_GAIyxqd_11_GAIyxqd_12_GAIyxqd_13_GAIyxqd_14_GtSHRd__SHRd_0_SHRd_1_SHRd_2_SHRd_3_SHRd_4_SHRd_5_SHRd_6_SHRd_7_SHRd_8_SHRd_9_SHRd_10_SHRd_11_SHRd_12_SHRd_13_SHRd_14_r14_lFZ">buildBlock(_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Build a <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code> with the provided key paths.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="n">buildBlock</span><span class="o">&lt;</span>
+    <span class="kt">ValueA</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueB</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueC</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueD</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueE</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueF</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueG</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueH</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueI</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueJ</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueK</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueL</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueM</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueN</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueO</span><span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span>
+    <span class="kt">ValueP</span><span class="p">:</span> <span class="kt">Hashable</span>
+<span class="o">&gt;</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">keyPathA</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueA</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathB</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueB</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathC</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueC</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathD</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueD</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathE</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueE</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathF</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueF</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathG</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueG</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathH</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueH</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathI</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueI</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathJ</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueJ</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathK</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueK</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathL</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueL</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathM</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueM</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathN</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueN</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathO</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueO</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="n">_</span> <span class="nv">keyPathP</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Root</span><span class="p">,</span> <span class="kt">ValueP</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></span><span class="o">&lt;</span><span class="kt">Root</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathA</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathB</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathC</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathD</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathE</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathF</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathG</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathH</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathI</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathJ</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathK</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathM</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathN</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathO</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyPathP</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A <code>Hashable</code> key path to add to the <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The built <code><a href="../Structs.html#/s:17HashableByKeyPath0acD10CollectionV">HashableKeyPathCollection</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external">Joseph Duffy</a>. All rights reserved. (Last updated: 2021-10-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
