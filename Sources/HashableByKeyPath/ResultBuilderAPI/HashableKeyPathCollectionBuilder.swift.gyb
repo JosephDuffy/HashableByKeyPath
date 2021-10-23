@@ -16,7 +16,7 @@ public final class HashableKeyPathCollectionBuilder<Root> {
     /// - parameter keyPath${character}: A `Hashable` key path to add to the `HashableKeyPathCollection`.
 %         end
     /// - returns: The built `HashableKeyPathCollection`.
-    static func buildBlock<
+    public static func buildBlock<
 %         for characterIndex in parametersRange:
 %             isLast = characterIndex == parametersRange[-1]
 %             character = string.ascii_uppercase[characterIndex]
@@ -65,7 +65,7 @@ public final class HashableKeyPathCollectionBuilder<Root> {
     /// - parameter keyPath${character}: A `Hashable` key path to add to the `HashableKeyPathCollection`.
 %         end
     /// - returns: The built `HashableKeyPathCollection`.
-    static func buildBlock<
+    public static func buildBlock<
 %         for characterIndex in parametersRange:
 %             isLast = characterIndex == parametersRange[-1]
 %             character = string.ascii_uppercase[characterIndex]

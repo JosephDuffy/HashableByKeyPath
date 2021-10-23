@@ -1,5 +1,5 @@
 import XCTest
-@testable import HashableByKeyPath
+import HashableByKeyPath
 
 final class EquatableKeyPathProviderTests: XCTestCase {
 

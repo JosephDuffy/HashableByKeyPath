@@ -1,6 +1,6 @@
 // This file is generated. Do not edit it.
 import XCTest
-@testable import HashableByKeyPath
+import HashableByKeyPath
 
 final class EquatableKeyPathCollectionBuilderTests: XCTestCase {
     func testEquatableKeyPathProvider1Parameter() {

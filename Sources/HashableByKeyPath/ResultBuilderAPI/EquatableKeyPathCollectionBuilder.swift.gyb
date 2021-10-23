@@ -16,7 +16,7 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
     /// - parameter keyPath${character}: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
 %         end
     /// - returns: The built `EquatableKeyPathCollection`.
-    static func buildBlock<
+    public static func buildBlock<
 %         for characterIndex in parametersRange:
 %             isLast = characterIndex == parametersRange[-1]
 %             character = string.ascii_uppercase[characterIndex]
@@ -65,7 +65,7 @@ public final class EquatableKeyPathCollectionBuilder<Root> {
     /// - parameter keyPath${character}: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
 %         end
     /// - returns: The built `EquatableKeyPathCollection`.
-    static func buildBlock<
+    public static func buildBlock<
 %         for characterIndex in parametersRange:
 %             isLast = characterIndex == parametersRange[-1]
 %             character = string.ascii_uppercase[characterIndex]
