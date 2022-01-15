@@ -15,7 +15,7 @@ jobs:
 
           - '12.4'
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2.4.0
 
       - name: Select Xcode ${{ matrix.xcode }}
         run: sudo xcode-select --switch /Applications/Xcode_${{ matrix.xcode }}.app
@@ -50,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2.4.0
 
       - name: Download Docs
         uses: actions/download-artifact@v1

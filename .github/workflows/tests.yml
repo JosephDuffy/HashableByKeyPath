@@ -16,7 +16,7 @@ jobs:
           - "11.7"
           - "12.4"
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.4.0
 
       - name: Select Xcode ${{ matrix.xcode }}
         run: sudo xcode-select --switch /Applications/Xcode_${{ matrix.xcode }}.app
@@ -44,7 +44,7 @@ jobs:
         swift: ["5.2", "5.3"]
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2.4.0
 
       - name: swift test
         run: swift test --enable-test-discovery
@@ -53,7 +53,7 @@ jobs:
     name: Check GYB has been run
     runs-on: macOS-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.4.0
 
       - name: Install GYB
         run: brew install nshipster/formulae/gyb
