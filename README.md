@@ -1,7 +1,7 @@
 # HashableByKeyPath
 
 [![Tests](https://github.com/JosephDuffy/HashableByKeyPath/workflows/Tests/badge.svg)](https://github.com/JosephDuffy/HashableByKeyPath/actions?query=workflow%3ATests)
-![Supported Xcode Versions](.github/xcode-versions-badge.svg)
+<!---xcode-version-badge-markdown-->
 [![Code Coverage](https://codecov.io/gh/JosephDuffy/HashableByKeyPath/branch/master/graph/badge.svg)](https://codecov.io/gh/JosephDuffy/HashableByKeyPath)
 [![Documentation](https://josephduffy.github.io/HashableByKeyPath/badge.svg)](https://josephduffy.github.io/HashableByKeyPath/)
 [![SwiftPM Compatible](https://img.shields.io/badge/SwiftPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
