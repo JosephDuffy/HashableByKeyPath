@@ -5,6 +5,9 @@ on:
     tags:
       - "v*"
 
+permissions:
+  contents: write
+
 jobs:
   build_docs:
     name: Build Docs (Xcode ${{ matrix.xcode }})
@@ -56,10 +59,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: docs
+          path: docs
 
       - name: Deploy docs
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: docs
