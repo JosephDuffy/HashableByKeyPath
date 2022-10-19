@@ -1,0 +1,40 @@
+#if swift(>=5.4)
+/// A result builder used to build `EquatableKeyPathCollection` values.
+@resultBuilder
+public final class EquatableKeyPathCollectionBuilder<Root> {
+    {% for parameterCount in 1...argument.maxArgumentCount %}
+    /// Build an `EquatableKeyPathCollection` with the provided key paths.
+    ///
+    {% for parameter in 1...parameterCount %}
+    /// - parameter keyPath{{ parameter }}: An `Equatable` key path to add to the `EquatableKeyPathCollection`.
+    {% endfor %}
+    /// - returns: The built `EquatableKeyPathCollection`.
+    public static func buildBlock<
+        {% for parameter in 1...parameterCount %}
+        {% if forloop.last %}
+        Value{{ parameter }}: Equatable
+        {% else %}
+        Value{{ parameter }}: Equatable,
+        {% endif %}
+        {% endfor %}
+    >(
+        {% for parameter in 1...parameterCount %}
+        {% if forloop.last %}
+        _ keyPath{{ parameter }}: KeyPath<Root, Value{{ parameter }}>
+        {% else %}
+        _ keyPath{{ parameter }}: KeyPath<Root, Value{{ parameter }}>,
+        {% endif %}
+        {% endfor %}
+    ) -> EquatableKeyPathCollection<Root> {
+        var collection = EquatableKeyPathCollection<Root>()
+        {% for parameter in 1...parameterCount %}
+        collection.addEquatableKeyPath(keyPath{{ parameter }})
+        {% endfor %}
+        return collection
+    }
+    {% if forloop.last %}
+
+    {% endif %}
+    {% endfor %}
+}
+#endif
