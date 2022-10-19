@@ -1,0 +1,37 @@
+#if swift(>=5.4)
+/// A result builder used to build `HashableKeyPathCollection` values.
+@resultBuilder
+public final class HashableKeyPathCollectionBuilder<Root> {
+    {% for parameterCount in 1...argument.maxArgumentCount %}
+    /// Build a `HashableKeyPathCollection` with the provided key paths.
+    ///
+    {% for parameter in 1...parameterCount %}
+    /// - parameter keyPath{{ parameter }}: A `Hashable` key path to add to the `HashableKeyPathCollection`.
+    {% endfor %}
+    /// - returns: The built `HashableKeyPathCollection`.
+    public static func buildBlock<
+        {% for parameter in 1...parameterCount %}
+        {% if forloop.last %}
+        Value{{ parameter }}: Hashable
+        {% else %}
+        Value{{ parameter }}: Hashable,
+        {% endif %}
+        {% endfor %}
+    >(
+        {% for parameter in 1...parameterCount %}
+        {% if forloop.last %}
+        _ keyPath{{ parameter }}: KeyPath<Root, Value{{ parameter }}>
+        {% else %}
+        _ keyPath{{ parameter }}: KeyPath<Root, Value{{ parameter }}>,
+        {% endif %}
+        {% endfor %}
+    ) -> HashableKeyPathCollection<Root> {
+        var collection = HashableKeyPathCollection<Root>()
+        {% for parameter in 1...parameterCount %}
+        collection.addHashableKeyPath(keyPath{{ parameter }})
+        {% endfor %}
+        return collection
+    }
+    {% endfor %}
+}
+#endif

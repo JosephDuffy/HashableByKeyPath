@@ -1,0 +1,7 @@
+sources:
+  - ResultBuilderAPI/Input/
+templates:
+  - ResultBuilderAPI/Templates/
+output: ResultBuilderAPI/Output/
+args:
+  maxArgumentCount: 16
