@@ -15,9 +15,8 @@ public protocol EquatableByKeyPath: Equatable {
 extension EquatableByKeyPath {
 
     public static func == (lhs: Self, rhs: Self) -> Bool {
-        var aggregator = EquatabilityKeyPathAggregator<Self>()
-        addEquatableKeyPaths(to: &aggregator)
-        return aggregator.evaluateEquality(lhs: lhs, rhs: rhs)
+        var evaluator = EquatableByKeyPathEvaluator(lhs: lhs, rhs: rhs)
+        return evaluator.checkEquality()
     }
 
 }
