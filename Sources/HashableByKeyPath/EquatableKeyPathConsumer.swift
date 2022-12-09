@@ -2,7 +2,6 @@
  A protocol that defines a function that can be used to add key paths from the `Root` type to `Equatable` properties.
  */
 public protocol EquatableKeyPathConsumer {
-
     /// The root type of the object that will be equated.
     associatedtype Root
 
@@ -19,5 +18,4 @@ public protocol EquatableKeyPathConsumer {
      - parameter keyPath: The key to include when equating 2 instances of `Root`.
      */
     mutating func addCustomEquator<KeyType>(forKeyPath keyPath: KeyPath<Root, KeyType>, equator: @escaping (KeyType, KeyType) -> Bool) where KeyType: Equatable
-
 }
