@@ -53,6 +53,16 @@
                ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "HashableByKeyPathPerformanceTests"
+               BuildableName = "HashableByKeyPathPerformanceTests"
+               BlueprintName = "HashableByKeyPathPerformanceTests"
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
