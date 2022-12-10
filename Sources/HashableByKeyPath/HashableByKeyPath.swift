@@ -23,9 +23,9 @@ extension HashableByKeyPath {
     }
 
     public func hash(into hasher: inout Hasher) {
-        var hashableKeyPathAggregator = HashableKeyPathAggregator<Self>()
-        Self.addHashableKeyPaths(to: &hashableKeyPathAggregator)
-        return hashableKeyPathAggregator.hashValues(from: self, into: &hasher)
+        var keyPathHasher = KeyPathHasher<Self>(root: self, hasher: hasher)
+        Self.addHashableKeyPaths(to: &keyPathHasher)
+        hasher = keyPathHasher.hasher
     }
 
 }
